@@ -1,0 +1,100 @@
+extends ./layout
+block content
+
+  header(role='banner')
+    nav
+      span leveldb.org
+      ul
+        li
+          a(href="https://github.com/rvagg/node-levelup/blob/master/README.md") Docs
+        li
+          a(href="http://hereishow.to/@leveldb") Examples
+
+    .content
+      img.logo(src='/img/logo.svg')
+      h2 Level DataBases
+      p 
+        b Level DataBases 
+        | offer a single, cross platform interface with a
+        br
+        | multitude of back-ends optimized for different use cases.
+
+      a.button.button-secondary(href='http://github.com/level') View On Github
+  .content(role='main')
+    section.features.cf
+      //
+         a href="http://twitter.com/leveldb" title="leveldb on Twitter" class="twitter">@leveldb</a 
+      .column
+        h2 Goals
+        ul.numbered
+          li
+            h3 Kernel-Like
+            | A database doesn't need to be a massive and mysterious background process. It only needs to offer the
+            | essential elements as building blocks so that you can compose the functionality you need.
+          li
+            h3 Embeddable & Networkable
+            | Level Databases will run on a server inside a process, exposed over the
+            | network as a server or in the browser.
+          li
+            h3 Multi-Back End
+            | Sometimes you are looking for write speed, sometimes compression, perhaps large in memory working sets.
+            | With Level Databases you can pick from a variety of back ends that are optimized differently.
+          li
+            h3 Community Based
+            | Almost all features can be found as modules published to the worlds most advanced package management system, 
+            a(href='https://www.npmjs.org/', title='npm') npm
+      .column
+        h2 Features
+        ul.numbered
+          li
+            h3 Sorted by keys
+            | By default, LevelDB stores entries lexicographically sorted by keys. The sorting is one of the main distinguishing features of LevelDB amongst similar embedded data storage libraries and comes in very useful for querying as we’ll see later.
+          li
+            h3 Arbitrary byte arrays
+            | Both keys and values are treated as simple arrays of bytes, so content can anything from ASCII strings to binary blobs.
+          li
+            h3 Compressed storage
+            | Google’s Snappy compression library is an optional dependency that can decrease the on-disk size of LevelDB stores with minimal sacrifice of speed. Snappy is highly optimized for fast compression and therefore does not provide particularly high compression ratios on common data.
+
+    section.platforms.center
+
+      h2 Supported Opperating Systems
+
+      .boxes
+        .box
+          img(src='/img/osx.png')
+          h3 OSX
+        .box
+          img(src='/img/linux.png')
+          h3 Linux
+        .box
+          img(src='/img/windows.png')
+          h3 Windows
+        .box
+          img(src='/img/solaris.png')
+          h3 SmartOS
+          span (Solaris)
+
+    section.community.center
+      h2 Community
+      p 
+        | Visit us on 
+        b irc.reenode.net 
+        | in 
+        b ##leveldb
+        br
+        | Do you have a detailed question? Visit us in
+        | google groups!
+
+      .boxes
+        a.box(href='https://groups.google.com/forum/#!forum/leveldb', target="_blank")
+          img(src='/img/icon-google.svg', width="40%", height="40%")
+          h3 LevelDB
+
+        a.box(href='https://groups.google.com/forum/#!forum/node-levelup', target="_blank") 
+          img(src='/img/icon-google.svg', width="40%", height="40%")
+          h3 LevelUP
+
+        a.box(href='https://twitter.com/leveldb', target="_blank") 
+          img(src='/img/icon-twitter.svg', width="40%", height="40%")
+          h3 Twitter
