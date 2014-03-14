@@ -350,3 +350,6 @@ section.community .boxes a.box {
 section.community .boxes a.box:hover {
   text-decoration: none;
 }
+section.talks h3 {
+  margin-bottom: 30px;
+}
