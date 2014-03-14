@@ -22,31 +22,6 @@ block content
       a.button.button-secondary(href='http://github.com/level') View On Github
   .content(role='main')
 
-    section.talks.center
-
-      h2 Talks
-
-      h3 Rodd Vagg - &nbsp;
-        em
-          a(href="http://r.va.gg/presentations/nodeconfeu.2013/") A Real Database Rethink
-
-      iframe(width="560",height="315",src="//www.youtube.com/embed/C-SbXvXi7O",frameborder="0",allowfullscreen)
-
-      h3 Dominic Tarr - &nbsp;
-        em A modular database?
-
-      iframe(width="560",height="315",src="//www.youtube.com/embed/4_22ie--Rzs",frameborder="0",allowfullscreen)
-
-      h3 Julian Gruber - &nbsp;
-        em Level me Up, Scotty!
-
-      iframe(width="560",height="315",src="//www.youtube.com/embed/41oDDTRWjIQ",frameborder="0",allowfullscreen)
-
-      h3 Matteo Collina - &nbsp;
-        em
-          a(href="http://nodejsconfit.levelgraph.io/") How to Cook a Graph Database in a Night
-
-
     section.features.cf
       //
          a href="http://twitter.com/leveldb" title="leveldb on Twitter" class="twitter">@leveldb</a 
@@ -82,9 +57,52 @@ block content
             h3 Compressed storage
             | Google’s Snappy compression library is an optional dependency that can decrease the on-disk size of LevelDB stores with minimal sacrifice of speed. Snappy is highly optimized for fast compression and therefore does not provide particularly high compression ratios on common data.
 
+    section.talks.center
+
+      h2 Conference Talks
+
+      h4
+        em
+          a(href="http://r.va.gg/presentations/nodeconfeu.2013/") "A Real Database Rethink"
+        |  - Rodd Vagg
+
+      h4 
+        em
+          a(href="https://www.youtube.com/embed/4_22ie--Rzs") "A modular database?"
+        |  - Dominic Tarr
+
+      h4
+        em
+          a(href="https://www.youtube.com/embed/41oDDTRWjIQ") "Level me Up, Scotty!"
+        |  - Julian Gruber
+
+      h4
+        em
+          a(href="http://nodejsconfit.levelgraph.io/") "How to Cook a Graph Database in a Night"
+        |  - Matteo Collina
+
+    section.talks.center
+
+      h2 Papers & Articles
+
+      h4
+        em 
+          a(href="http://dailyjs.com/2013/04/19/leveldb-and-node-1/") Intro to LevelDB
+        |  - Rodd Vagg
+
+      h4
+        em
+          a(href="http://nosqlsummer.org/paper/lsm-tree") The LSM-Tree
+        |  - Patrick O'Neil & al.
+
+      h4
+        em
+          a(href="http://nosqlsummer.org/paper/lsm-tree") SSTable and Log Structured Storage: LevelDB
+        |  - Ilya Grigorik
+
     section.platforms.center
 
-      h2 Supported Opperating Systems
+      h2 Supported Platforms
 
       .boxes
         .box
