@@ -5,17 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run watch-styles & npm run watch-jade & npm run server",
-    "deploy": "npm run build-styles && npm run build-jade && npm run git-deploy",
     "watch-styles": "stylus -w ./assets/styl/ -o ./assets/static/css/",
     "watch-jade": "jade --watch ./assets/jade/index.jade --out ./assets/static/",
     "build-styles": "stylus ./assets/styl/ -o ./assets/static/css/",
     "build-jade": "jade ./assets/jade/index.jade --out ./assets/static/",
     "server": "node server.js 8080",
     "git-co": "git checkout gh-pages && git reset --hard origin/master",
-    "copy": "cp -r ./assets/static/* .",
+    "prep": "npm run build-styles && npm run build-jade && cp -r ./assets/static/* . && echo 'leveldb.org' > CNAME",
     "git-commit": "git add -A . && git commit -a -m 'gh-pages update'",
     "git-push": "git push origin gh-pages --force && git checkout master",
-    "git-deploy": "npm run git-co && npm run copy && npm run git-commit && npm run git-push"
+    "deploy": "npm run git-co && npm run prep && npm run git-commit && npm run git-push"
   },
   "author": "hij1nx",
   "license": "MIT",
