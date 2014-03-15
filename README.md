@@ -54,7 +54,6 @@ puts the built site in the root, and then does git push origin gh-pages.
 git fetch
 git checkout master # if you're not already on it
 git merge <fork-branch>
-# make sure changes look good
 npm run deploy
 ```
 
