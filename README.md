@@ -48,7 +48,9 @@ npm start
 
 ### For maintainers
 ```
-git pull <fork-branch>
+git checkout master
+git fetch
+git merge <fork-branch>
 # make sure changes look good
 npm run deploy
 ```
