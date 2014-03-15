@@ -47,16 +47,16 @@ npm start
 ```
 
 ### For maintainers
+`npm run deploy` builds the static site, switches to the gh-pages branch and 
+puts the built site in the root, and then does git push origin gh-pages.
+
 ```
-git checkout master
 git fetch
+git checkout master # if you're not already on it
 git merge <fork-branch>
 # make sure changes look good
 npm run deploy
 ```
-
-`npm run deploy` builds the static site, switches to the gh-pages branch and 
-puts the built site in the root, and then does git push origin gh-pages.
 
 ### To run in production mode on a SmartOS server, use:
 ```
