@@ -14,7 +14,7 @@
     "git-co": "git checkout gh-pages && git reset --hard origin/master",
     "copy": "cp -r ./assets/static/* .",
     "git-commit": "git add -A . && git commit -a -m 'gh-pages update'",
-    "git-push": "git push origin gh-pages && git checkout master",
+    "git-push": "git push origin gh-pages --force && git checkout master",
     "git-deploy": "npm run git-co && npm run copy && npm run git-commit && npm run git-push"
   },
   "author": "hij1nx",
