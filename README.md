@@ -34,7 +34,6 @@ Where:
 
 * **layout.jade** — basic layout file for the entire website
 * **index.jade** — the page content (here being the landing page)
-* **footer.jade** — for your feet
 
 ## Contributing
 
