@@ -1,41 +1,25 @@
-/*------------------------------------------------------------------------------
+/*--------------------------------------------------------------------
 *
-*  Buttons
+* BUTTONS
 *
-------------------------------------------------------------------------------*/
+--------------------------------------------------------------------*/
 
 button
   border: none
 
-.button
+button, .button
   display: inline-block
-  font-size: $font-size-base
+  font-size: $font-base
   text-align: center
-  color: white
   cursor: pointer
-  border-radius: .1875rem
-  padding: .625em .9375rem
   -webkit-appearance: none
-  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3)
-  text-transform: uppercase
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
 
-  &:hover
-    transition: all .3s ease-in
-    -webkit-transition: all .3s ease-in
+  &:disabled
+    cursor: not-allowed
 
-  &.button-large
-    padding: .9375rem 1.875rem
-    font-size: $font-size-large
-
-  &.button-primary
-    background-color: $bright-feathers
-    color: $satanic-gray
-
-    &:hover
-      background: darken(@background-color, 10%)
-
-  &.button-secondary
-    background-color: $juicy-oranges
-
-    &:hover
-      background: darken(@background-color, 10%)
+  &:focus
+    outline: none
