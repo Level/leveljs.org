@@ -89,13 +89,35 @@ img, video, iframe
   margin: 0 auto
 
 section
-  margin-bottom: 40px
+  position: relative
+  padding-bottom: 40px
+  margin-bottom: 20px
+
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 100%
+    height: 1px
+    width: 20%
+    margin-left: -10%
+    background-color: $gray-lighter
 
 @media $desktop
 
   .content
     width: 65%
 
+  .column
+    float: left
+    width: 50%
+
+    &:first-of-type
+      padding-right: 30px
+
+    &:last-of-type
+      padding-left: 30px
+      
 @media $mobile-devices
 
   .content

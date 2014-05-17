@@ -93,11 +93,33 @@ iframe {
   margin: 0 auto;
 }
 section {
-  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+section:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  height: 1px;
+  width: 20%;
+  margin-left: -10%;
+  background-color: #e0e0e0;
 }
 @media (min-width: 769px) {
   .content {
     width: 65%;
+  }
+  .column {
+    float: left;
+    width: 50%;
+  }
+  .column:first-of-type {
+    padding-right: 30px;
+  }
+  .column:last-of-type {
+    padding-left: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -212,19 +234,7 @@ footer p:not(:last-child) {
   margin: 0;
 }
 .intro {
-  position: relative;
-  padding-bottom: 40px;
   text-align: center;
-}
-.intro:after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  height: 1px;
-  width: 20%;
-  margin-left: -10%;
-  background-color: #e0e0e0;
 }
 .intro h1 {
   margin-bottom: 0;
