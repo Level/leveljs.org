@@ -24,7 +24,7 @@ h6 {
 h1,
 h2,
 h3 {
-  line-height: 1.2000000000000002;
+  line-height: 1.2;
 }
 h1 {
   font-size: 3rem;
@@ -156,7 +156,7 @@ header h4 {
   text-transform: uppercase;
 }
 header nav a {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 header nav a:last-of-type {
   padding-right: 0;
@@ -177,4 +177,21 @@ footer {
 }
 footer p:not(:last-child) {
   margin: 0;
+}
+.intro {
+  text-align: center;
+}
+.intro h1 {
+  margin-bottom: 0;
+}
+.intro h4 {
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+@media (min-width: 769px) {
+  h4 {
+    margin: 0 auto;
+    max-width: 80%;
+  }
 }
