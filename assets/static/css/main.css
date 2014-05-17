@@ -10,6 +10,7 @@ html {
 }
 body {
   font: 500 1rem/1.5 "ff-more-web-pro", Georgia, Times, serif;
+  color: #333;
   -webkit-font-smoothing: antialiased;
 }
 ::-moz-selection {
@@ -27,6 +28,7 @@ h4,
 h5,
 h6 {
   margin: 30px 0;
+  color: #000;
   font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
   font-weight: 900;
 }
@@ -39,19 +41,16 @@ h1 {
   font-size: 3rem;
 }
 h2 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 }
 h3 {
-  font-size: 2.2rem;
-}
-h4 {
   font-size: 1.8rem;
 }
-h5 {
+h4 {
   font-size: 1.2rem;
 }
-h6 {
-  font-size: 0.8rem;
+h5 {
+  font-size: 1rem;
 }
 small {
   font-size: 0.75rem;
@@ -93,9 +92,12 @@ iframe {
 .content {
   margin: 0 auto;
 }
+section {
+  margin-bottom: 40px;
+}
 @media (min-width: 769px) {
   .content {
-    width: 70%;
+    width: 65%;
   }
 }
 @media (max-width: 768px) {
@@ -176,12 +178,15 @@ button.button-large,
   padding: 0 20px;
 }
 header {
-  line-height: 80px;
   border-bottom: 1px solid #e0e0e0;
 }
-header h4 {
+header h3 {
   margin: 0;
   text-transform: uppercase;
+}
+header nav h3,
+header nav a {
+  line-height: 80px;
 }
 header nav a {
   padding: 0 20px;
@@ -207,19 +212,57 @@ footer p:not(:last-child) {
   margin: 0;
 }
 .intro {
+  position: relative;
+  padding-bottom: 40px;
   text-align: center;
+}
+.intro:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  height: 1px;
+  width: 20%;
+  margin-left: -10%;
+  background-color: #e0e0e0;
 }
 .intro h1 {
   margin-bottom: 0;
 }
-.intro h4 {
+.intro h3 {
   margin-top: 0;
   font-weight: 400;
   line-height: 1.2;
 }
 @media (min-width: 769px) {
-  h4 {
+  .intro h4 {
     margin: 0 auto 30px;
     max-width: 80%;
   }
+}
+.conferences dl {
+  margin: 0;
+  padding: 25px 0;
+}
+.conferences dl:first-of-type {
+  padding-top: 0;
+}
+.conferences dl:not(:last-of-type) {
+  border-bottom: 1px solid #e0e0e0;
+}
+.conferences dl dt {
+  margin: 0;
+}
+.conferences dl dd {
+  color: #707070;
+}
+.conferences dl dd a,
+.conferences dl dd a:hover {
+  color: inherit;
+}
+.conferences dl dd a {
+  text-decoration: underline;
+}
+.conferences dl dd a:hover {
+  text-decoration: none;
 }
