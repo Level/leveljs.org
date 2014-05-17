@@ -24,7 +24,7 @@ h6 {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  line-height: 1.2000000000000002;
 }
 h1 {
   font-size: 3rem;
@@ -149,7 +149,7 @@ button:focus,
 }
 header {
   line-height: 80px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #e0e0e0;
 }
 header h4 {
   margin: 0;
@@ -169,4 +169,12 @@ header nav .label {
   background-color: #8cd79f;
   color: #fff;
   font: 400 0.75rem/1.25 "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+}
+footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+}
+footer p:not(:last-child) {
+  margin: 0;
 }
