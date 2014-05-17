@@ -35,7 +35,7 @@ h6 {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  line-height: 1.2000000000000002;
 }
 h1 {
   font-size: 3rem;
@@ -88,6 +88,9 @@ img,
 video,
 iframe {
   max-width: 100%;
+}
+iframe {
+  min-height: 500px;
 }
 .content {
   margin: 0 auto;
