@@ -9,7 +9,9 @@ button
 
 button, .button
   display: inline-block
+  border-radius: 3px
   font-size: $font-base
+  font-family: $font-franklin
   text-align: center
   cursor: pointer
   -webkit-appearance: none
@@ -17,9 +19,21 @@ button, .button
   -moz-user-select: none
   -ms-user-select: none
   user-select: none
+  color: white
 
   &:disabled
     cursor: not-allowed
 
   &:focus
     outline: none
+
+  &.button-primary
+    background-color: $green
+
+    &:hover
+      background-color: darken(@background-color, 30%)
+
+  &.button-large
+    height: 50px
+    line-height: 50px
+    padding: 0 20px

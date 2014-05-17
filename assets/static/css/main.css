@@ -26,6 +26,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 30px 0;
   font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
   font-weight: 900;
 }
@@ -60,8 +61,10 @@ a {
   color: #34954c;
   text-decoration: none;
 }
-a:hover {
+a:hover:not(.button) {
   color: #1a4b26;
+}
+a:hover {
   transition: all 0.5s ease-in;
   -webkit-transition: all 0.5s ease-in;
 }
@@ -138,7 +141,9 @@ button {
 button,
 .button {
   display: inline-block;
+  border-radius: 3px;
   font-size: 1rem;
+  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
   text-align: center;
   cursor: pointer;
   -webkit-appearance: none;
@@ -146,6 +151,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: #fff;
 }
 button:disabled,
 .button:disabled {
@@ -154,6 +160,20 @@ button:disabled,
 button:focus,
 .button:focus {
   outline: none;
+}
+button.button-primary,
+.button.button-primary {
+  background-color: #34954c;
+}
+button.button-primary:hover,
+.button.button-primary:hover {
+  background-color: #246835;
+}
+button.button-large,
+.button.button-large {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
 }
 header {
   line-height: 80px;
@@ -199,7 +219,7 @@ footer p:not(:last-child) {
 }
 @media (min-width: 769px) {
   h4 {
-    margin: 0 auto;
+    margin: 0 auto 30px;
     max-width: 80%;
   }
 }
