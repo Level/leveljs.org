@@ -9,8 +9,7 @@ html {
   font-size: 100%;
 }
 body {
-  font: 500 1.25rem/1.5 "freight-display-pro", Georgia, Times, serif;
-  text-rendering: optimizeLegibility;
+  font: 500 1rem/1.5 "ff-more-web-pro", Georgia, Times, serif;
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -19,8 +18,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "proxima-nova-alt-condensed", Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+  font-weight: 900;
 }
 h1,
 h2,
@@ -28,28 +27,38 @@ h3 {
   line-height: 1.2;
 }
 h1 {
-  font-size: 3.75rem;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 3.25rem;
+  font-size: 2.6rem;
 }
 h3 {
-  font-size: 2.75rem;
+  font-size: 2.2rem;
 }
 h4 {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
 }
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 h6 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 small {
-  font-size: 0.9375rem;
+  font-size: 0.75rem;
 }
 a {
   cursor: pointer;
+  color: #34954c;
+  text-decoration: none;
+}
+a:hover {
+  color: #1a4b26;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+}
+a:focus {
+  outline: none;
 }
 .cf:before,
 .cf:after {
@@ -69,6 +78,19 @@ img,
 video,
 iframe {
   max-width: 100%;
+}
+.content {
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .content {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
 }
 ul,
 ol {
@@ -108,7 +130,7 @@ button {
 button,
 .button {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
   cursor: pointer;
   -webkit-appearance: none;
@@ -124,4 +146,27 @@ button:disabled,
 button:focus,
 .button:focus {
   outline: none;
+}
+header {
+  line-height: 80px;
+  border-bottom: 1px solid #ccc;
+}
+header h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+header nav a {
+  padding: 0 15px;
+}
+header nav a:last-of-type {
+  padding-right: 0;
+}
+header nav .label {
+  display: inline-block;
+  padding: 3px 5px;
+  margin-left: 5px;
+  border-radius: 3px;
+  background-color: #8cd79f;
+  color: #fff;
+  font: 400 0.75rem/1.25 "franklin-gothic-urw", Helvetica, Arial, sans-serif;
 }

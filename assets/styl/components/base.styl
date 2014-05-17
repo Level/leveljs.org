@@ -13,13 +13,12 @@ html
   font-size: 100%
 
 body
-  font: 500 $font-base/$line-height-base $font-freight
-  text-rendering: optimizeLegibility
+  font: 500 $font-base/$line-height-base $font-ffmore
   -webkit-font-smoothing: antialiased
 
 h1, h2, h3, h4, h5, h6
-  font-family: $font-proxima
-  font-weight: 800
+  font-family: $font-franklin
+  font-weight: 900
 
 h1, h2, h3
   line-height: $line-height-tight
@@ -47,6 +46,16 @@ small
 
 a
   cursor: pointer
+  color: $green
+  text-decoration: none
+
+  &:hover
+    color: $green-dark
+    transition: all .5s ease-in
+    -webkit-transition: all .5s ease-in
+
+  &:focus
+    outline: none
 
 .cf
   &:before,
@@ -65,3 +74,16 @@ a
 
 img, video, iframe
   max-width: 100%
+
+.content
+  margin: 0 auto
+
+@media $desktop
+
+  .content
+    width: 70%
+
+@media $mobile-devices
+
+  .content
+    width: 90%
