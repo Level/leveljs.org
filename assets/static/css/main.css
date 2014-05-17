@@ -12,6 +12,14 @@ body {
   font: 500 1rem/1.5 "ff-more-web-pro", Georgia, Times, serif;
   -webkit-font-smoothing: antialiased;
 }
+::-moz-selection {
+  background-color: #34954c;
+  color: #fff;
+}
+::selection {
+  background-color: #34954c;
+  color: #fff;
+}
 h1,
 h2,
 h3,
