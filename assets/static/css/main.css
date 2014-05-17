@@ -94,8 +94,8 @@ iframe {
 }
 section {
   position: relative;
-  padding-bottom: 40px;
-  margin-bottom: 20px;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 section:after {
   content: '';
@@ -200,6 +200,14 @@ button.button-primary:hover,
 .button.button-primary:hover {
   background-color: #246835;
 }
+button.button-secondary,
+.button.button-secondary {
+  background-color: #8cd79f;
+}
+button.button-secondary:hover,
+.button.button-secondary:hover {
+  background-color: #34954c;
+}
 button.button-large,
 .button.button-large {
   height: 50px;
@@ -291,5 +299,60 @@ footer p:not(:last-child) {
   }
   .platforms ul.unstyled li img {
     margin: 0 auto;
+  }
+}
+.community p {
+  margin: 0;
+}
+.community p:last-of-type {
+  margin-bottom: 40px;
+}
+.community .button-google,
+.community .button-twitter {
+  position: relative;
+  padding-left: 50px;
+}
+.community .button-google:before,
+.community .button-twitter:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+}
+.community .button-google:before {
+  left: 10px;
+  height: 120px;
+  width: 40px;
+  background-image: url("/img/icon-google.svg");
+}
+.community .button-twitter:before {
+  left: 10px;
+  height: 60px;
+  width: 60px;
+  background-image: url("/img/icon-twitter.svg");
+}
+@media (min-width: 769px) {
+  .community .button:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .community .button:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  .community .button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  .community .button {
+    width: 100%;
   }
 }
