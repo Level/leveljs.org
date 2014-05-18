@@ -54,6 +54,7 @@ h2 {
   font-size: 2.4rem;
 }
 h3 {
+  margin-top: 0;
   font-size: 1.8rem;
 }
 h4 {
@@ -123,9 +124,14 @@ section:after {
 section.centered {
   text-align: center;
 }
-@media (min-width: 769px) {
+@media (min-width: 481px) and (max-width: 1023px) {
   .content {
-    width: 65%;
+    width: 80%;
+  }
+}
+@media (min-width: 1023px) {
+  .content {
+    width: 60%;
   }
   .column {
     float: left;
@@ -353,7 +359,7 @@ footer p:not(:last-child) {
   font-weight: 400;
   line-height: 1.2;
 }
-@media (min-width: 769px) {
+@media (min-width: 1023px) {
   .intro h4 {
     margin: 0 auto 30px;
     max-width: 80%;
@@ -434,7 +440,7 @@ footer p:not(:last-child) {
   width: 60px;
   background-image: url("/img/icon-twitter.svg");
 }
-@media (min-width: 769px) {
+@media (min-width: 1023px) {
   .community .button:not(:last-of-type) {
     margin-right: 20px;
   }
@@ -448,7 +454,10 @@ footer p:not(:last-child) {
   .community .button {
     display: block;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
+  }
+  .community .button:last-child {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 480px) {
@@ -456,11 +465,18 @@ footer p:not(:last-child) {
     width: 100%;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1023px) {
   .features .column {
     text-align: left;
   }
 }
-.papers p {
-  margin: 0;
+@media (min-width: 1023px) {
+  .papers p {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .papers p {
+    margin-top: 0;
+  }
 }

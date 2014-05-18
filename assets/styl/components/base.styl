@@ -41,6 +41,7 @@ h2
   font-size: $font-heading-two
 
 h3
+  margin-top: 0
   font-size: $font-heading-three
 
 h4
@@ -109,10 +110,15 @@ section
   &.centered
     text-align: center
 
+@media $tablet
+
+  .content
+    width: 80%
+
 @media $desktop
 
   .content
-    width: 65%
+    width: 60%
 
   .column
     float: left
