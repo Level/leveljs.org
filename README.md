@@ -11,6 +11,7 @@ The Stylus files are located under `assets/static/styl`, with the following arch
     ├── components
     ├── globals
     ├── pages
+    ├── sections
     └── main.styl
 ```
 
@@ -18,7 +19,8 @@ Where:
 
 * **compontents** — are reusable components for common elements (such as buttons, forms, typography)
 * **globals** — reusable variables, mixins and base for the website
-* **pages** — pages of the website (comments, profile, 404, landing, etc.)
+* **pages** — subpages of the website (comments, profile, 404, landing, etc.)
+* **sections** - individual sections of a page (header, footer, community, platforms, etc.)
 
 ## Template Structure
 
@@ -34,6 +36,7 @@ Where:
 
 * **layout.jade** — basic layout file for the entire website
 * **index.jade** — the page content (here being the landing page)
+* **footer.jade** - footnotes
 
 ## Contributing
 

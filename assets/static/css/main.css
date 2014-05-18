@@ -45,7 +45,7 @@ h6 {
 h1,
 h2,
 h3 {
-  line-height: 1.2000000000000002;
+  line-height: 1.2;
 }
 h1 {
   font-size: 3rem;
@@ -102,7 +102,7 @@ iframe {
   max-width: 100%;
 }
 iframe {
-  min-height: 550px;
+  min-height: 500px;
 }
 .content {
   margin: 0 auto;
@@ -264,7 +264,6 @@ button.button-large,
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -282,7 +281,6 @@ button.button-large,
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -297,7 +295,6 @@ button.button-large,
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -312,22 +309,6 @@ button.button-large,
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-@-ms-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -342,7 +323,6 @@ button.button-large,
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -438,18 +418,23 @@ footer p:not(:last-child) {
 .intro {
   text-align: center;
 }
-.intro h1 {
-  margin: 60px 0 0 0;
-}
 .intro h3 {
   margin-top: 0;
   font-weight: 400;
   line-height: 1.2;
 }
 @media (min-width: 1023px) {
+  .intro h1 {
+    margin: 60px 0 0 0;
+  }
   .intro h4 {
     margin: 0 auto 30px;
     max-width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .intro h1 {
+    margin: 60px 0 10px 0;
   }
 }
 .conferences dl {
@@ -506,7 +491,7 @@ footer p:not(:last-child) {
 .community .button-google,
 .community .button-twitter {
   position: relative;
-  padding-left: 50px;
+  padding-left: 60px;
 }
 .community .button-google:before,
 .community .button-twitter:before {
