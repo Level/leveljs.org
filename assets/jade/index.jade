@@ -5,14 +5,19 @@ block content
     .content
       nav.cf
         h3.pull-left LevelDB
-        ul.unstyled.pull-right
-          li
-            a(href='https://github.com/rvagg/node-levelup/blob/master/README.md', title='Docs') Docs
-          li
-            a(href='http://hereishow.to/@leveldb', title='Examples') Examples
-            span.label Soon
-          li
-            a(href='https://github.com/level', title='See LevelDB organization on Github') Github
+        
+        .pull-right
+          label(for='menu-toggle') Menu
+          input(type='checkbox', id='menu-toggle')
+
+          ul.unstyled
+            li
+              a(href='https://github.com/rvagg/node-levelup/blob/master/README.md', title='Docs') Docs
+            li
+              a(href='http://hereishow.to/@leveldb', title='Examples') Examples
+              span.label Soon
+            li
+              a(href='https://github.com/level', title='See LevelDB organization on Github') Github
 
   .content(role='main')
     section.intro.animated.fadeInDown
