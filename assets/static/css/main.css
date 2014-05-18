@@ -1,3 +1,13 @@
+/*--------------------------------------------------------------------
+*
+* LEVELDB.org
+* v.1.0.1
+*
+* Designed and coded by @fox
+* Maintained by github.com/orgs/level/members
+* ❤︎ 
+*
+--------------------------------------------------------------------*/
 *,
 *:after,
 *:before {
@@ -127,6 +137,10 @@ section.centered {
   .column:last-of-type {
     padding-left: 30px;
   }
+  .column.column-small {
+    width: calc(100% / 3);
+    padding: 0;
+  }
 }
 @media (max-width: 768px) {
   .content {
@@ -217,6 +231,84 @@ button.button-large,
   line-height: 50px;
   padding: 0 20px;
 }
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 header {
   border-bottom: 1px solid #e0e0e0;
 }
@@ -254,7 +346,7 @@ footer p:not(:last-child) {
   text-align: center;
 }
 .intro h1 {
-  margin-bottom: 0;
+  margin: 60px 0 0 0;
 }
 .intro h3 {
   margin-top: 0;
@@ -368,4 +460,7 @@ footer p:not(:last-child) {
   .features .column {
     text-align: left;
   }
+}
+.papers p {
+  margin: 0;
 }

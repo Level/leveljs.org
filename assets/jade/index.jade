@@ -15,7 +15,7 @@ block content
             a(href='https://github.com/level', title='See LevelDB organization on Github') Github
 
   .content(role='main')
-    section.intro
+    section.intro.animated.fadeInDown
       h1 Level Databases
       h3 Level DataBases offer a single, cross platform interface with a multitude of back-ends optimized for different use cases.
       a(href='https://github.com/level', class='button button-primary button-large', title='View on Github') View on Github
@@ -117,6 +117,23 @@ block content
         li 
           img(src='./img/logo-smartos.svg', height='80', title='SmartOS')
           | SmartOS
+
+    section.papers.centered
+      h3 Papers
+
+      .cf
+
+        .column.column-small
+          a(href='http://dailyjs.com/2013/04/19/leveldb-and-node-1/') Intro to LevelDB
+          p Rodd Vagg
+
+        .column.column-small
+          a(href='http://nosqlsummer.org/paper/lsm-tree') The LSM-Tree
+          p Patrick O'Neil & al.
+
+        .column.column-small
+          a(href='http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb') SSTable and Log Structured Storage: LevelDB
+          p Ilya Grigorik 
 
     section.community.centered
       h3 Community
