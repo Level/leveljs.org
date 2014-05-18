@@ -19,7 +19,7 @@ html {
   font-size: 100%;
 }
 body {
-  font: 500 1rem/1.5 "ff-more-web-pro", Georgia, Times, serif;
+  font: 400 1rem/1.5 "ff-more-web-pro", Georgia, Times, serif;
   color: #333;
   -webkit-font-smoothing: antialiased;
 }
@@ -59,6 +59,7 @@ h3 {
 }
 h4 {
   font-size: 1.2rem;
+  color: #707070;
 }
 h5 {
   font-size: 1rem;
@@ -108,8 +109,8 @@ iframe {
 }
 section {
   position: relative;
-  padding-bottom: 60px;
-  margin-bottom: 60px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 section:after {
   content: '';
@@ -123,6 +124,15 @@ section:after {
 }
 section.centered {
   text-align: center;
+}
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .intro h3 {
+    font-size: 1.2rem;
+  }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   .content {
@@ -237,6 +247,11 @@ button.button-large,
   line-height: 50px;
   padding: 0 20px;
 }
+@media (max-width: 480px) {
+  .button {
+    width: 100%;
+  }
+}
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -341,7 +356,7 @@ header nav .label {
   font: 400 0.75rem/1.25 "franklin-gothic-urw", Helvetica, Arial, sans-serif;
 }
 footer {
-  padding: 40px 0;
+  padding-bottom: 40px;
   color: #999;
   text-align: center;
 }
@@ -401,10 +416,13 @@ footer p:not(:last-child) {
 }
 @media (max-width: 480px) {
   .platforms ul.unstyled li {
-    margin-bottom: 20px;
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin-bottom: 30px;
   }
   .platforms ul.unstyled li img {
-    margin: 0 auto;
+    margin: 0 auto 10px;
   }
 }
 .community p {
@@ -458,11 +476,6 @@ footer p:not(:last-child) {
   }
   .community .button:last-child {
     margin-bottom: 0;
-  }
-}
-@media (max-width: 480px) {
-  .community .button {
-    width: 100%;
   }
 }
 @media (min-width: 1023px) {

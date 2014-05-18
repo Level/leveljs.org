@@ -13,7 +13,7 @@ html
   font-size: 100%
 
 body
-  font: 500 $font-base/$line-height-base $font-ffmore
+  font: 400 $font-base/$line-height-base $font-ffmore
   color: $gray
   -webkit-font-smoothing: antialiased
 
@@ -46,6 +46,7 @@ h3
 
 h4
   font-size: $font-heading-four
+  color: lighten($gray, 30%)
 
 h5
   font-size: $font-heading-five
@@ -94,8 +95,8 @@ iframe
 
 section
   position: relative
-  padding-bottom: 60px
-  margin-bottom: 60px
+  padding-bottom: 50px
+  margin-bottom: 50px
 
   &:after
     content: ''
@@ -109,6 +110,17 @@ section
 
   &.centered
     text-align: center
+
+@media $smartphone
+
+  .intro 
+    
+    h1
+      font-size: $font-heading-three
+      line-height: 1
+
+    h3
+      font-size: $font-heading-four
 
 @media $tablet
 
