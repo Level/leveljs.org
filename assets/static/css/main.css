@@ -35,7 +35,7 @@ h6 {
 h1,
 h2,
 h3 {
-  line-height: 1.2000000000000002;
+  line-height: 1.2;
 }
 h1 {
   font-size: 3rem;
@@ -90,7 +90,7 @@ iframe {
   max-width: 100%;
 }
 iframe {
-  min-height: 500px;
+  min-height: 550px;
 }
 .content {
   margin: 0 auto;
@@ -221,12 +221,17 @@ header {
   border-bottom: 1px solid #e0e0e0;
 }
 header h3 {
-  margin: 0;
+  margin: 10px 0;
+  padding-left: 80px;
+  background: url("/img/logo.svg") 0 0 no-repeat;
+  background-size: contain;
   text-transform: uppercase;
 }
-header nav h3,
-header nav a {
+header nav h3 {
   line-height: 80px;
+}
+header nav a {
+  line-height: 100px;
 }
 header nav .label {
   display: inline-block;
@@ -357,5 +362,10 @@ footer p:not(:last-child) {
 @media (max-width: 480px) {
   .community .button {
     width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .features .column {
+    text-align: left;
   }
 }

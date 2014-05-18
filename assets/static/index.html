@@ -28,15 +28,28 @@
         </nav>
       </div>
     </header>
-    <div class="content">
+    <div role="main" class="content">
       <section class="intro">
         <h1>Level Databases</h1>
         <h3>Level DataBases offer a single, cross platform interface with a multitude of back-ends optimized for different use cases.</h3><a href="https://github.com/level" title="View on Github" class="button button-primary button-large">View on Github</a>
       </section>
-      <section class="demo centered">
-        <h3>Demo</h3>
-        <p>Live Demo made with <a href='http://browserify.org'>Browserify</a> and <a href='http://requirebin.com'>RequireBin</a> by <a href='https://github.com/brycebaril'>Bryce Baril</a></p>
-        <iframe src="http://requirebin.com/embed?gist=f7f917fcbf3784b0b804" width="100%" frameborder="0"></iframe>
+      <section class="features centered">
+        <h3>Features</h3>
+        <div class="cf">
+          <div class="column">
+            <h4>Sorted by keys</h4>
+            <p>By default, LevelDB stores entries lexicographically sorted by keys. The sorting is one of the main distinguishing features of LevelDB amongst similar embedded data storage libraries and comes in very useful for querying as we’ll see later.</p>
+            <h4>Arbitrary byte arrays</h4>
+            <p>Both keys and values are treated as simple arrays of bytes, so content can anything from ASCII strings to binary blobs.</p>
+            <h4>Compressed storage</h4>
+            <p>Google’s Snappy compression library is an optional dependency that can decrease the on-disk size of LevelDB stores with minimal sacrifice of speed. Snappy is highly optimized for fast compression and therefore does not provide particularly high compression ratios on common data.</p>
+          </div>
+          <div class="column">
+            <h4>Demo</h4>
+            <p>Live Demo made with <a href='http://browserify.org'>Browserify</a> and <a href='http://requirebin.com'>RequireBin</a> by <a href='https://github.com/brycebaril'>Bryce Baril</a></p>
+            <iframe src="http://requirebin.com/embed?gist=f7f917fcbf3784b0b804" width="100%" frameborder="0"></iframe>
+          </div>
+        </div>
       </section>
       <section class="goals centered">
         <h3>Goals</h3>

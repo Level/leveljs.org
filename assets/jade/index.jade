@@ -14,16 +14,32 @@ block content
           li
             a(href='https://github.com/level', title='See LevelDB organization on Github') Github
 
-  .content
+  .content(role='main')
     section.intro
       h1 Level Databases
       h3 Level DataBases offer a single, cross platform interface with a multitude of back-ends optimized for different use cases.
       a(href='https://github.com/level', class='button button-primary button-large', title='View on Github') View on Github
 
-    section.demo.centered
-      h3 Demo
-      p Live Demo made with <a href='http://browserify.org'>Browserify</a> and <a href='http://requirebin.com'>RequireBin</a> by <a href='https://github.com/brycebaril'>Bryce Baril</a>
-      iframe(src='http://requirebin.com/embed?gist=f7f917fcbf3784b0b804' width='100%', frameborder=0)
+    section.features.centered
+      h3 Features
+
+      .cf
+        .column
+
+          h4 Sorted by keys
+          p By default, LevelDB stores entries lexicographically sorted by keys. The sorting is one of the main distinguishing features of LevelDB amongst similar embedded data storage libraries and comes in very useful for querying as we’ll see later.
+
+          h4 Arbitrary byte arrays
+          p Both keys and values are treated as simple arrays of bytes, so content can anything from ASCII strings to binary blobs.
+
+          h4 Compressed storage
+          p Google’s Snappy compression library is an optional dependency that can decrease the on-disk size of LevelDB stores with minimal sacrifice of speed. Snappy is highly optimized for fast compression and therefore does not provide particularly high compression ratios on common data.
+
+        .column
+          h4 Demo
+          p Live Demo made with <a href='http://browserify.org'>Browserify</a> and <a href='http://requirebin.com'>RequireBin</a> by <a href='https://github.com/brycebaril'>Bryce Baril</a>
+          iframe(src='http://requirebin.com/embed?gist=f7f917fcbf3784b0b804' width='100%', frameborder=0)
+
 
     section.goals.centered
       h3 Goals
@@ -110,19 +126,4 @@ block content
       a(href='https://groups.google.com/forum/#!forum/leveldb', class='button button-secondary button-large button-google') LevelDB on Google Groups
       a(href='https://groups.google.com/forum/#!forum/node-levelup', class='button button-secondary button-large button-google') LevelUP on Google Groups
       a(href='https://twitter.com/leveldb', class='button button-secondary button-large button-twitter') @leveldb on Twitter
-
-  //- .content(role='main')
-  //-   section.features.cf
-  //-     .column
-  //-       h2 Features
-  //-       ul.numbered
-  //-         li
-  //-           h3 Sorted by keys
-  //-           | By default, LevelDB stores entries lexicographically sorted by keys. The sorting is one of the main distinguishing features of LevelDB amongst similar embedded data storage libraries and comes in very useful for querying as we’ll see later.
-  //-         li
-  //-           h3 Arbitrary byte arrays
-  //-           | Both keys and values are treated as simple arrays of bytes, so content can anything from ASCII strings to binary blobs.
-  //-         li
-  //-           h3 Compressed storage
-  //-           | Google’s Snappy compression library is an optional dependency that can decrease the on-disk size of LevelDB stores with minimal sacrifice of speed. Snappy is highly optimized for fast compression and therefore does not provide particularly high compression ratios on common data.
 
