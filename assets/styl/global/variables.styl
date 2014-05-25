@@ -1,53 +1,38 @@
-/*------------------------------------------------------------------------------
+/*--------------------------------------------------------------------
 *
-*  Variables
+* VARIABLES
 *
-------------------------------------------------------------------------------*/
+--------------------------------------------------------------------*/
 
 /* Font Families */
 
-$font-adelle = "adelle-sans", 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font-ffmore = "ff-more-web-pro", Georgia, Times, serif
+$font-franklin = "franklin-gothic-urw", Helvetica, Arial, sans-serif
 
-/* Font Weights */
+//- Font Sizes
 
-$font-weight-regular = 400
-$font-weight-bold = 800
+$font-base = 1rem
+$font-large = $font-base*1.5
+$font-small = $font-base*0.75
 
-/* Font Sizes */
+//- Headings Font Sizes
 
-$font-size-base = 1rem /* 16px */
-$font-size-small = .8125rem /* 13px */
-$font-size-large = 1.25rem /* 20px */
-$font-size-mega =  2.25rem /* 36px */
+$font-heading-one = $font-base*3
+$font-heading-two = $font-base*2.4
+$font-heading-three = $font-base*1.8
+$font-heading-four = $font-base*1.2
+$font-heading-five = $font-base*1
 
-$font-size-h1 = 2.5rem /* 40px */
-$font-size-h2 = 2rem /* 32px */
-$font-size-h3 = 1.5rem /* 24px */
-$font-size-h4 = 1.125rem /* 18px */
+//- Line Heights
 
-/* Line Heights */
-
-$line-height-base = 1.25
-$line-height-headings = 1
-
-/* Colors */
-$satanic-gray = #222
-$node-green = #73A53E
-$bright-feathers = #D4EB95
-$sky-blue-dark = #0c1426
-$cryogenic-blue = #00AEB2
-
-$phase-yellow = #F7CF07
-$juicy-oranges = #F77423
-
-$space-gray = #415160
-$space-gray-light = lighten($space-gray, 50%)
-$space-gray-lighter = lighten($space-gray, 85%)
+$line-height-base = 1.5
+$line-height-tight = $line-height-base*0.8
+$line-height-spaced = $line-height-base*1.2
 
 /* Responsive Breakpoints */
 
 $smartphone = '(max-width: 480px)'
 $mobile-devices = '(max-width: 768px)'
 $tablet = '(min-width: 481px) and (max-width: 1023px)'
-$desktop = '(min-width: 769px)'
+$desktop = '(min-width: 1023px)'
 $desktop-wide = '(min-width: 1200px)'

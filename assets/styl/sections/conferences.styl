@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------------
+*
+* CONFERENCES
+*
+--------------------------------------------------------------------*/
+
+.conferences
+  
+  dl
+    margin: 0
+    padding: 25px 0
+
+    &:first-of-type
+      padding-top: 0
+
+    &:not(:last-of-type)
+      border-bottom: 1px solid $gray-lighter
+
+    dt
+      margin: 0
+
+    dd
+      color: lighten($gray, 30%)
+
+      a, a:hover
+        color: inherit
+
+      a
+        text-decoration: underline
+
+        &:hover
+          text-decoration: none
