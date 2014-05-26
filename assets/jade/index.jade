@@ -14,16 +14,17 @@ block content
             li
               a(href='https://github.com/rvagg/node-levelup/blob/master/README.md', title='Docs') Docs
             li
-              a(href='http://hereishow.to/@leveldb', title='Examples') Examples
+              a(href='#', title='Examples') Examples
               span.label Soon
             li
               a(href='https://github.com/level', title='See LevelDB organization on Github') Github
 
   .content(role='main')
     section.intro.animated.fadeInDown
-      h1 Level Databases
-      h3 Level DataBases offer a single, cross platform interface with a multitude of back-ends optimized for different use cases.
-      a(href='https://github.com/level', class='button button-primary button-large', title='View on Github') View on Github
+      h1 LevelDB
+      h3 LevelDB is a light-weight, single-purpose library for persistence with bindings to many platforms.
+      a(href='http://code.google.com/p/leveldb/', class='button button-primary button-large', title='View on Google Code') C++ Library
+      a(href='https://github.com/rvagg/node-levelup', class='button button-primary button-large', title='Node.js Bindings') Node.js Bindings
 
     section.features.centered
       h3 Features
@@ -42,30 +43,36 @@ block content
 
         .column
           h4 Demo
-          p Live Demo made with <a href='http://browserify.org'>Browserify</a> and <a href='http://requirebin.com'>RequireBin</a> by <a href='https://github.com/brycebaril'>Bryce Baril</a>
+          p Live Demo similar to the Node.js bindings made with <a href='http://browserify.org'>Browserify</a> and <a href='http://requirebin.com'>RequireBin</a> by <a href='https://github.com/brycebaril'>Bryce Baril</a>
           iframe(src='http://requirebin.com/embed?gist=150acfc11dbaaffdb52e', width='100%', frameborder=0)
 
 
     section.goals.centered
-      h3 Goals
+      h3 Highlights
 
       .cf
         .column
-          h4 Multi-Back End
-          p Sometimes you are looking for write speed, sometimes compression, perhaps large in memory working sets. With Level Databases you can pick from a variety of back ends that are optimized differently.
+          h4 Levelup
+          p Levelup is a Node.js project that aims to provide a common, portable interface to a multitude of LevelDB forks such as Hyperdex. Check out the many 
+            a(href='https://github.com/level') flavours of LevelDB 
+            | made available though this project.
 
         .column
           h4 Kernel-Like
-          p A database doesn't need to be a massive and mysterious background process. It only needs to offer the essential elements as building blocks so that you can compose the functionality you need.
+          p Most databases are mysterious black-boxs. LevelDB provides a highly transparent, light-weight foundation for you to compose higher-level features on top of.
         
       .cf
         .column
           h4 Embeddable & Networkable
-          p Level Databases will run on a server inside a process, exposed over the network as a server or in the browser.
+          p LevelDB is embedded, but can be networked adding protocols such as http, tcp or udp to your process.
         
         .column
-          h4 Community Based
-          p Almost all features can be found as modules published to the worlds most advanced package management system, <a href='https://www.npmjs.org/' title='npm'>npm</a>.
+          h4 Features
+          p LevelDB has a small set of primitives. This allows more complex features such as replication, map-reduce, pub-sub, etc. to be published as modules on package management systems such as 
+            a(href='https://www.npmjs.org/' title='npm') npm 
+            | or 
+            a(href='https://github.com/clibs/clib' title='clibs') clibs 
+            | . Competition leads to innovation!
 
     section.conferences.centered
       h3 Conference Talks
@@ -122,6 +129,18 @@ block content
         li 
           img(src='./img/logo-illumos.svg', height='80', title='Illumos')
           | Illumos
+
+    section.tools.centered
+      h3 Tools
+
+        .cf
+
+          | &nbsp;
+          br
+
+          a(href='http://github.com/hij1nx/ldb') A Commandline REPL
+          | &nbsp;
+          br
 
     section.papers.centered
       h3 Papers
