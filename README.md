@@ -1,6 +1,6 @@
 # leveldb.org
 
-This is the source code for [leveldb.org](leveldb.org).
+This is the source code for [leveldb.org](http://leveldb.org).
 
 ## Stylus Structure
 The Stylus files are located under `assets/static/styl`, with the following architecture...
