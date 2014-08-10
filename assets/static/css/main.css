@@ -45,7 +45,7 @@ h6 {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  line-height: 1.2000000000000002;
 }
 h1 {
   font-size: 3rem;
@@ -252,6 +252,10 @@ button.button-large,
   .button {
     width: 100%;
   }
+  button.button-large,
+  .button.button-large {
+    margin: 0px;
+  }
 }
 .animated {
   -webkit-animation-duration: 1s;
@@ -265,6 +269,7 @@ button.button-large,
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -282,6 +287,7 @@ button.button-large,
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -296,6 +302,7 @@ button.button-large,
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -310,6 +317,22 @@ button.button-large,
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
   }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-ms-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -324,6 +347,7 @@ button.button-large,
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -436,6 +460,9 @@ footer p:not(:last-child) {
 @media (max-width: 480px) {
   .intro h1 {
     margin: 60px 0 10px 0;
+  }
+  .intro .button:not(:last-of-type) {
+    margin-bottom: 20px;
   }
 }
 .conferences dl {
