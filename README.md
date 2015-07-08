@@ -10,23 +10,21 @@ The Stylus files are located under `assets/static/styl`, with the following arch
   └── styl
     ├── components
     ├── globals
-    ├── pages
     ├── sections
     └── main.styl
 ```
 
 Where:
 
-* **compontents** — are reusable components for common elements (such as buttons, forms, typography)
+* **components** — reusable components for common elements (such as buttons, forms, typography)
 * **globals** — reusable variables, mixins and base for the website
-* **pages** — subpages of the website (comments, profile, 404, landing, etc.)
-* **sections** - individual sections of a page (header, footer, community, platforms, etc.)
+* **sections** — individual sections of a page (header, footer, community, platforms, etc.)
 
 ## Template Structure
 
 ```
 ├── assets
-  └── templates
+  └── jade
     ├── index.jade
     ├── footer.jade
     └── layout.jade
@@ -36,7 +34,7 @@ Where:
 
 * **layout.jade** — basic layout file for the entire website
 * **index.jade** — the page content (here being the landing page)
-* **footer.jade** - footnotes
+* **footer.jade** — footnotes
 
 ## Contributing
 
@@ -50,7 +48,7 @@ npm start
 ```
 
 ### For maintainers
-`npm run deploy` builds the static site, switches to the gh-pages branch and 
+`npm run deploy` builds the static site, switches to the gh-pages branch and
 puts the built site in the root, and then does git push origin gh-pages.
 
 ```
