@@ -1,0 +1,74 @@
+/*--------------------------------------------------------------------
+*
+* COMMUNITY
+*
+--------------------------------------------------------------------*/
+
+section.community
+  
+  background-color $light-green
+
+  p
+    margin 0
+
+    &:last-of-type
+      margin-bottom 40px
+
+  .button-google, .button-twitter
+    position relative
+    padding-left 60px
+
+    &:before
+      content ''
+      position absolute
+      top 0
+      background-position 0 0
+      background-repeat no-repeat
+      background-size contain
+      opacity .5
+
+  .button-google:before
+    left 10px
+    height 120px
+    width 40px
+    background-image url('/img/icon-google.svg')
+
+  .button-twitter:before
+    left 10px
+    height 60px
+    width 60px
+    background-image url('/img/icon-twitter.svg')
+    
+  .cf a
+    font-family $font-apercu
+    font-weight bold
+    
+  .cf img
+    padding-right 10px
+
+@media $desktop
+
+  .community 
+
+    .button:not(:last-of-type)
+      margin-right 20px
+
+@media $mobile-devices
+
+  .community
+    
+    .button
+      &:not(:last-of-type)
+        margin-bottom 20px
+
+@media $tablet
+
+  .community
+    
+    .button
+      display block
+      width 50%
+      margin 0 auto 20px
+
+      &:last-child
+        margin-bottom 0

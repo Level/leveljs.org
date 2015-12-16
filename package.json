@@ -1,28 +1,24 @@
 {
   "name": "leveldb.org",
-  "version": "1.0.0",
-  "description": "This is the source code for [leveldb.org](leveldb.org).",
-  "main": "index.js",
-  "scripts": {
-    "start": "npm run watch-styles & npm run watch-jade & npm run server",
-    "watch-styles": "stylus -w ./assets/styl/ -o ./assets/static/css/",
-    "watch-jade": "jade --watch ./assets/jade/index.jade --out ./assets/static/",
-    "build-styles": "stylus ./assets/styl/ -o ./assets/static/css/",
-    "build-jade": "jade ./assets/jade/index.jade --out ./assets/static/",
-    "server": "node server.js 8080",
-    "git-co": "git checkout gh-pages && git reset --hard origin/master",
-    "prep": "npm run build-styles && npm run build-jade && cp -r ./assets/static/* . && echo 'leveldb.org' > CNAME",
-    "git-commit": "git add -A . && git commit -a -m 'gh-pages update'",
-    "git-push": "git push origin gh-pages --force && git checkout master",
-    "deploy": "npm run git-co && npm run prep && npm run git-commit && npm run git-push"
-  },
-  "author": "hij1nx",
-  "license": "MIT",
-  "dependencies": {
-    "send": "^0.2.0"
-  },
+  "version": "2.0.0",
+  "description": "This is the source code for [leveldb.org](http://leveldb.org).",
   "devDependencies": {
-    "jade": "^1.3.0",
+    "jade": "^1.11.0",
     "stylus": "^0.42.3"
-  }
+  },
+  "scripts": {
+    "watch": "npm run watch:templates & npm run watch:syles",
+    "watch:templates": "jade -w ./templates/index.jade -o ./assests/index.html",
+    "watch:styles": "stylus -w ./styles/index.styl -o ./assests/css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Level/leveldb.org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Level/leveldb.org/issues"
+  },
+  "homepage": "https://github.com/Level/leveldb.org#readme"
 }

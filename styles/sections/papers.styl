@@ -1,0 +1,92 @@
+/*--------------------------------------------------------------------
+*
+* PAPERS
+*
+--------------------------------------------------------------------*/
+
+section.papers
+  
+  padding-top 0px
+  padding-bottom 0px
+  
+  .papers-nav
+    
+    h4, h5
+      margin 0px !important
+
+    h4 
+      line-height 22px
+      padding 0
+      color $green
+      
+    h5
+      font-family $font-apercu
+      font-size $font-small
+      padding-bottom 0px
+      color $medium-gray      
+  
+  .papers-nav .papers-link, a:hover, a:visited:hover
+    text-decoration: none;
+  
+  .papers-nav .papers-link
+    color: #1D1D1F;
+    letter-spacing: .1em;
+    position: relative;
+  
+  .papers-nav ul li:nth-child(1)
+    -webkit-transition-delay: .075s;
+    transition-delay: .075s;  
+    
+  .papers-nav ul li:nth-child(2)
+    -webkit-transition-delay: .15s;
+    transition-delay: .15s;  
+    
+  .papers-nav ul li
+    margin: 0 0 10px;
+    display: block;
+    padding: 10px;
+    -webkit-transition: .5s cubic-bezier(.77,0,.175,1)-webkit-transform,.25s linear opacity;
+    transition: .5s cubic-bezier(.77,0,.175,1)transform,.25s linear opacity;
+    opacity: 1;  
+    
+  .papers-nav .papers-link .link-headline, .papers-nav .papers-link .link-subline
+    -webkit-transition: .25s cubic-bezier(.165,.84,.44,1);
+    -webkit-transform: translateY(0);  
+    
+  .papers-nav .papers-link.is-selected .link-subline, .papers-nav .papers-link:hover .link-subline
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);  
+    
+  
+  .papers-nav .papers-link.is-selected .link-headline, .papers-nav .papers-link:hover .link-headline
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);  
+    
+  .papers-nav .papers-link .link-headline
+    display: block;
+    font-size: 1.25em;
+    transition: .25s cubic-bezier(.165,.84,.44,1);
+    -ms-transform: translateY(0);
+    transform: translateY(0);  
+    
+  .papers-nav .papers-link .link-subline
+    display: inline-block;
+    margin: 0;
+    background-color: transparent;
+    transition: .25s cubic-bezier(.165,.84,.44,1);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    min-width: 0;
+    position: relative;
+    opacity: 1;  
+
+@media $smartphone
+  nav .unstyled
+    display block
+    
+@media $tablet
+  nav .unstyled
+    display block

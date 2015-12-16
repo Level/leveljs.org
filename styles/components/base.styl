@@ -1,0 +1,163 @@
+/*--------------------------------------------------------------------
+*
+* BASE
+*
+--------------------------------------------------------------------*/
+
+*, *:after, *:before
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  box-sizing border-box
+
+html
+  font-size 100%
+
+body
+  font 400 $font-base/$line-height-base $font-brown-light
+  color $medium-gray
+  -webkit-font-smoothing antialiased
+  background-color $white
+
+::-moz-selection
+  background-color $green
+  color $light-green
+
+::selection
+  background-color $green
+  color white
+
+h2, h3, h4, h5, h6
+  margin 30px 0
+  font-family $font-brown-bold
+  font-weight 900
+  
+h1
+  margin 30px 0  
+  font-weight lighter
+
+h1, h2, h3
+  line-height $line-height-tight
+
+h1
+  font-size $font-heading-one
+
+h2
+  font-size $font-heading-two
+
+h3
+  margin-top 0
+  font-size $font-heading-three
+
+h4
+  font-size $font-heading-four
+
+h5
+  font-size $font-heading-five
+
+.subtitle
+  font-family $font-apercu
+
+small
+  font-size $font-small
+
+a
+  cursor pointer
+  color $green
+  text-decoration none
+
+  &:hover:not(.button)
+    color $green-dark
+
+  &:hover
+    transition all .5s ease-in
+    -webkit-transition all .5s ease-in
+
+  &:focus
+    outline none
+
+.cf
+  &:before,
+  &:after
+    content " "
+    display table
+
+  &:after
+    clear both
+
+.pull-left
+  float left
+
+.pull-right
+  float right
+
+img, video, iframe
+  max-width 100%
+
+iframe
+  min-height 500px
+
+.content
+  margin 0 auto
+
+section
+  position relative
+  padding 5% 20%
+
+  &.centered
+    text-align center
+  
+  h3:first-child
+    padding 30px
+    color $medium-gray
+
+.subline
+  display inline-block;
+  margin 0;
+  background-color transparent;
+  transition .25s cubic-bezier(.165,.84,.44,1)
+  -ms-transform translateY(0);
+  transform translateY(0);
+  min-width 0;
+  position relative;
+  opacity 1;    
+
+@media $smartphone
+
+  .intro 
+    
+    h1
+      font-size $font-heading-three
+      line-height 1
+
+    h3
+      font-size $font-heading-four    
+
+@media $tablet
+
+  .content
+    width 100%   
+
+@media $desktop
+
+  .content
+    width 100%
+
+  .column
+    float left
+    width 50%
+
+    &:first-of-type
+      padding-right 30px
+
+    &:last-of-type
+      padding-left 30px
+
+    &.column-three
+      width calc(100%/3)
+      padding 0
+      
+    &.column-four
+      width calc(100%/4)
+      padding 10px
+      text-align left
+  

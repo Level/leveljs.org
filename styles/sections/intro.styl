@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------------
+*
+* INTRO
+*
+--------------------------------------------------------------------*/
+
+.intro
+  text-align center
+  padding 12%
+  background-color $dark-gray
+  padding-bottom 15%
+  margin-bottom 0px
+
+  h2
+    color $white
+    margin 0
+    
+  h1:last-of-type
+    font-weight lighter 
+    color $medium-gray
+    max-width 790px
+    margin 0 auto
+    padding-top 50px
+    
+  .logo
+    width 80px
+    height 80px
+    margin 0 auto
+    background-color $green
+  
+  .navarrow
+    width 50px
+    position relative
+    top 60px
+
+@media $desktop
+
+  .intro
+
+    h1
+      margin 60px 0 0 0
+
+    h4
+      margin 0 auto 30px
+      max-width 80%
+
+@media $smartphone
+
+  .intro
+
+    h1
+      margin 60px 0 10px 0
+
+    .button
+      &:not(:last-of-type)
+        margin-bottom 20px

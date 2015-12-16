@@ -1,0 +1,98 @@
+section.languages
+  
+  background-color $green
+  padding 10%
+  
+  h3:first-child
+    color $white
+  
+  a:active, a:hover
+    outline 0
+
+  nav a 
+    position relative
+    display inline-block
+    margin 15px 25px
+    outline none
+    text-decoration none
+    letter-spacing 1px
+    font-weight 400
+    text-shadow 0 0 1px rgba(255,255,255,0.3)
+    font-size $font-heading-three  
+    text-decoration none
+    font-family $font-brown-bold
+    
+  nav a:hover, nav a:focus
+    outline none
+  
+  .linkeffect a
+    padding 10px
+    color $dark-green
+    font-weight 700
+    text-shadow none
+    -webkit-transition color 0.3s
+    -moz-transition color 0.3s
+    transition color 0.3s
+  
+  .linkeffect a::before, .linkeffect a::after
+    position absolute
+    left 0
+    width 100%
+    height 2px
+    background $light-green
+    content ''
+    opacity 0
+    -webkit-transition opacity 0.3s, -webkit-transform 0.3s
+    -moz-transition opacity 0.3s, -moz-transform 0.3s
+    transition opacity 0.3s, transform 0.3s
+    -webkit-transform translateY(-10px)
+    -moz-transform translateY(-10px)
+    transform translateY(-10px)
+    
+  .linkeffect a::before 
+    top 0
+    -webkit-transform translateY(-10px)
+    -moz-transform translateY(-10px)
+    transform translateY(-10px)
+    
+  .linkeffect a::after
+    bottom 0
+    -webkit-transform translateY(10px)
+    -moz-transform translateY(10px)
+    transform translateY(10px)
+    
+  *, *:after, *::before
+    -webkit-box-sizing border-box
+    -moz-box-sizing border-box
+    box-sizing border-box    
+    
+  .linkeffect a:hover, .linkeffect a:focus
+    color $light-green
+    
+  .linkeffect a:hover::before, .linkeffect a:focus::before, .linkeffect a:hover::after, .linkeffect a:focus::after
+    opacity 1
+    -webkit-transform translateY(0px)
+    -moz-transform translateY(0px)
+    transform translateY(0px)
+
+@media $smartphone
+  section.languages
+    nav a
+      border-bottom 3px solid $light-green 
+  .linkeffect a::before, .linkeffect a::after
+      display none
+      
+    nav.linkeffect
+        max-width 410px
+        margin auto
+
+@media $tablet
+  section.languages
+    nav a
+      border-bottom 3px solid $light-green 
+  .linkeffect a::before, .linkeffect a::after
+      display none
+      
+    nav.linkeffect
+        max-width 410px
+        margin auto      

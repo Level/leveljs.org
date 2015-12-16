@@ -1,0 +1,153 @@
+extends ./layout
+block content
+
+  header(role='banner')
+
+  .content(role='main')
+    section.intro.animated.fadeInDown
+      img(src='./img/logo.svg', height='100', title='LevelDB Logo')
+      h2 LevelDB
+      h1 A light-weight, single-purpose library for persistence with bindings to many platforms.
+      img(src='./img/arrow.svg', class='navarrow' title='NavArrow')
+
+    section.languages.centered.animated.fadeInDown
+      h3 Languages
+
+      nav.linkeffect
+        a(href='https://github.com/google/leveldb')| C++
+        a(href='https://github.com/level')| NodeJS
+        a(href='https://github.com/golang/leveldb')| Go           
+        a(href='https://plyvel.readthedocs.org')| Python
+
+    section.features.centered
+      h3 Features
+
+      .cf
+        .column
+
+          h4 Sorted by keys
+          p By default, LevelDB stores entries lexicographically sorted by keys. The sorting is one of the main distinguishing features of LevelDB amongst similar embedded data storage libraries and comes in very useful for querying as we’ll see later.
+
+          h4 Arbitrary byte arrays
+          p Both keys and values are treated as simple arrays of bytes, so content can anything from ASCII strings to binary blobs.
+        
+        .column
+
+          h4 Compressed storage
+          p Google’s Snappy compression library is an optional dependency that can decrease the on-disk size of LevelDB stores with minimal sacrifice of speed. Snappy is highly optimized for fast compression and therefore does not provide particularly high compression ratios on common data.
+
+    section.highlights.centered
+      h3 Highlights
+
+      .cf
+
+        .column.column-four
+          img(src='./img/kernel.svg', height='50', title='Kernel-Like')
+          h4 Kernel&#8209Like
+          p Most databases are mysterious black-boxes. LevelDB provides a highly transparent, light-weight foundation for you to compose higher-level features on top of.
+
+        .column.column-four
+          img(src='./img/embeddable.svg', height='50', title='Embeddable')
+          h4 Embeddable
+          p LevelDB is embedded, but can be networked adding protocols such as http, tcp or udp to your process.
+
+        .column.column-four
+          img(src='./img/scalable.svg', height='50', title='Scalable')
+          h4 Scalable
+          p Levelup is a Node.js project that aims to provide a common, portable interface to a multitude of LevelDB forks such as Hyperdex. 
+
+        .column.column-four
+          img(src='./img/portable.svg', height='50', title='Portable')
+          h4 Portable
+          p LevelDB has a small set of primitives. This allows more complex features such as replication, map-reduce, pub-sub, etc. to be published as modules.
+
+    section.platforms.centered
+      h3 Supported Platforms
+
+      ul.unstyled.cf
+        li 
+          img(src='./img/logo-osx.svg', height='60', title='OS X')
+          | OS X
+        li
+          img(src='./img/logo-linux.svg', height='60', title='Linux')
+          | Linux
+        li
+          img(src='./img/logo-windows.svg', height='60', title='Windows')
+          | Windows
+        li
+          img(src='./img/logo-illumos.svg', height='60', title='Illumos')
+          | Illumos
+
+    section.conferences.centered
+      h3 Conference Talks
+
+      div.bg-gradient
+        h4 <a href='http://campjs.com/#leveldb'> LevelDB (workshop)</a>
+        h5 <a href='https://twitter.com/hij1nx'>Paolo Fragomeni</a> at <a href='http://campjs.com/'>CampJS</a> (May 23&ndash;26th 2014)
+
+        h4 LevelDB (sessions and workshops)
+        h5 Various camp counsellors at <a href='http://nodeconf.com/'>NodeConf</a> (July 3rd&ndash;6th)
+
+        h4 <a href='http://forwardjs.com/training-sessions/#goto-303'> LevelDB + Node.js: A persistance renaissance (workshop)</a>
+        h5 <a href='https://twitter.com/hij1nx'>Paolo Fragomeni</a> at <a href='http://forwardjs.com/'>Forward.js</a> (July 24&ndash;26th)
+
+        h4 <a href='http://nodejsconfit.levelgraph.io/'> How to Cook a Graph Database in a Night</a>
+        h5 <a href='https://twitter.com/matteocollina'>Matteo Collina</a> at JSConf.it (2014)
+
+        h4 <a href='http://r.va.gg/presentations/nodeconfeu.2013/'> A Real Database Rethink</a>
+        h5 <a href='https://twitter.com/rvagg'>Rod Vagg</a> at NodeConf.eu (2013)
+
+        h4 <a href='https://www.youtube.com/embed/4_22ie--Rzs'> A modular database?</a>
+        h5 <a href='https://twitter.com/dominictarr'>Dominic Tarr</a> at NodeConf.eu (2013)
+
+        h4 <a href='https://www.youtube.com/embed/41oDDTRWjIQ'> Level me up, Scotty!</a>
+        h5 <a href='https://twitter.com/juliangruber'>Julian Gruber</a> at NodeConf.eu (2013)
+
+    section.papers.centered
+      h3 Papers
+
+      nav.papers-nav
+        ul.unstyled.cf
+          li
+            a(class="papers-link" href="http://dailyjs.com/2013/04/18/leveldb-and-node-1/" onclick="ga('send', 'pageview', 'http://dailyjs.com/2013/04/18/leveldb-and-node-1/');")  
+              h4.link-headline Intro to LevelDB
+              h5.link-subline by Rodd Vagg
+          li
+            a(class="papers-link" href="http://nosqlsummer.org/paper/lsm-tree" onclick="ga('send', 'pageview', 'http://nosqlsummer.org/paper/lsm-tree');")
+              h4.link-headline The LSM-Tree
+              h5.link-subline by Patrick O'Neil & al.
+          li
+            a(class="papers-link" href="http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb" onclick="ga('send', 'pageview', 'http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb');")
+              h4.link-headline SSTable and Log Structured Storage: LevelDB
+              h5.link-subline by Ilya Grigorik  
+
+    section.companies.centered
+      h3 Companies   
+
+      .cf      
+        .column.column-three
+          a(href='https://www.nowsecure.com/')
+            img(src='./img/nowsecure_logo.png', height='40px', title='Nowsecure')
+        .column.column-three
+          a(href='http://hyperdex.org/')
+            img(src='./img/hyperdex_logo.png', height='40px', title='Hyperdex')
+        .column.column-three
+          a(href='https://nodesource.com/')
+           img(src='./img/nodesource_logo.png', height='40px', title='Nodesource')
+
+    section.community.centered
+      h3 Community
+      p Visit us on <strong>irc.freenode.net</strong> in <a href='irc://freenode.net/##leveldb'>##leveldb</a>.
+      p Do you have a detailed question? Check out Google Groups!
+
+      .cf      
+        .column.column-three      
+          img(src='./img/google.svg' height='14px')
+          a(href='https://groups.google.com/forum/#!forum/leveldb') LevelDB 
+        .column.column-three       
+          img(src='./img/google.svg' height='14px')
+          a(href='https://groups.google.com/forum/#!forum/node-levelup') LevelUP 
+        .column.column-three         
+          img(src='./img/twitter.svg' height='14px')               
+          a(href='https://twitter.com/leveldb') @leveldb
+
