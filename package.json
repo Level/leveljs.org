@@ -7,8 +7,11 @@
     "stylus": "^0.42.3"
   },
   "scripts": {
-    "watch": "npm run watch:templates & npm run watch:syles",
+    "build": "npm run build:templates & npm run build:syles",
+    "watch": "npm run watch:templates & npm run watch:styles",
+    "build:templates": "jade ./templates/index.jade -o ./assests/index.html",
     "watch:templates": "jade -w ./templates/index.jade -o ./assests/index.html",
+    "build:styles": "stylus ./styles/index.styl -o ./assests/css/index.css",
     "watch:styles": "stylus -w ./styles/index.styl -o ./assests/css/index.css"
   },
   "repository": {
