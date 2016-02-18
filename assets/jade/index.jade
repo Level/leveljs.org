@@ -36,7 +36,7 @@ block content
           p By default, LevelDB stores entries lexicographically sorted by keys. The sorting is one of the main distinguishing features of LevelDB amongst similar embedded data storage libraries and comes in very useful for querying as we’ll see later.
 
           h4 Arbitrary byte arrays
-          p Both keys and values are treated as simple arrays of bytes, so content can anything from ASCII strings to binary blobs.
+          p Both keys and values are treated as simple arrays of bytes, so content can be anything from ASCII strings to binary blobs.
 
           h4 Compressed storage
           p Google’s Snappy compression library is an optional dependency that can decrease the on-disk size of LevelDB stores with minimal sacrifice of speed. Snappy is highly optimized for fast compression and therefore does not provide particularly high compression ratios on common data.
