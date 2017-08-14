@@ -1,5 +1,7 @@
 # leveldb.org
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Level/leveldb.org.svg)](https://greenkeeper.io/)
+
 This is the source code for [leveldb.org](http://leveldb.org).
 
 ## Stylus Structure
