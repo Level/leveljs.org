@@ -43,10 +43,25 @@ block content
           p Google’s Snappy compression library is an optional dependency that can decrease the on-disk size of LevelDB stores with minimal sacrifice of speed. Snappy is highly optimized for fast compression and therefore does not provide particularly high compression ratios on common data.
 
         .column
-          h4 Demo
-          p Live Demo similar to the Node.js bindings made with <a href='http://browserify.org'>Browserify</a> and <a href='http://requirebin.com'>RequireBin</a> by <a href='https://github.com/brycebaril'>Bryce Baril</a>
-          iframe(src='http://requirebin.com/embed?gist=150acfc11dbaaffdb52e', width='100%', frameborder=0)
+          h4 Live Demo
+          #demo.runkit-container
+          script#demo-source(type='text/template').
+            var level = require('level')
+            var db = level('./db', { valueEncoding: 'json' })
 
+            db.put('key', { example: true }, function (err) {
+              if (err) throw err
+
+              db.get('key', function (err, value) {
+                if (err) throw err
+                console.log(value)
+              })
+            })
+          script.
+            RunKit.createNotebook({
+              element: document.getElementById('demo'),
+              source: document.getElementById('demo-source').textContent
+            })
 
     section.goals.centered
       h3 Highlights
@@ -168,4 +183,3 @@ block content
       a(href='https://groups.google.com/forum/#!forum/leveldb', class='button button-secondary button-large button-google') LevelDB 
       a(href='https://groups.google.com/forum/#!forum/node-levelup', class='button button-secondary button-large button-google') LevelUP 
       a(href='https://twitter.com/leveldb', class='button button-secondary button-large button-twitter') @leveldb
-
