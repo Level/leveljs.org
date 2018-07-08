@@ -11,8 +11,8 @@
     "build-jade": "jade ./assets/jade/index.jade --out ./assets/static/",
     "server": "node server.js 8080",
     "git-co": "git checkout gh-pages && git reset --hard origin/master",
-    "prep": "npm run build-styles && npm run build-jade && cp -r ./assets/static/* . && echo \"leveldb.org\" > CNAME",
-    "git-commit": "git add -A . && git commit -m \"gh-pages update\"",
+    "prep": "npm run build-styles && npm run build-jade && cp -r ./assets/static/* . && echo leveldb.org > CNAME",
+    "git-commit": "git add -A . && git commit -m gh-pages",
     "git-push": "git push origin gh-pages --force && git checkout master",
     "deploy": "npm run git-co && npm run prep && npm run git-commit && npm run git-push"
   },
