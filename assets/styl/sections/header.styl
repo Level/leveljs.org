@@ -15,12 +15,12 @@ header
     text-transform: uppercase
 
   nav
-  
+
     input[type=checkbox]
       position: absolute
       top: -9999px
       left: -9999px
-    
+
     h3
       line-height: 80px
     a, label
@@ -29,7 +29,7 @@ header
     label
       cursor: pointer
       color: $green
-      font-family: $font-franklin
+      font-family: $header-font
       font-weight: 800
 
     .label
@@ -39,7 +39,7 @@ header
       border-radius: 3px
       background-color: $green-light
       color: white
-      font: 400 $font-small/1.25 $font-franklin
+      font: 400 $font-small/1.25 $header-font
 
 @media (min-width: 769px)
 
@@ -51,32 +51,32 @@ header
 @media $mobile-devices
 
   nav
-    
+
     .pull-right
       float: none
       text-align: right
-    
+
     .unstyled
       display: none
 
     input[type=checkbox]:checked ~ ul.unstyled
-      
+
       display: block
       width: 100%
 
     input[type=checkbox]:checked ~ ul.unstyled
-      
+
       li
         padding: 0
         position: relative
 
         &:not(:last-of-type)
           border-bottom: 1px solid $gray-lighter
-      
+
       li, a
         display: inline-block
         width: 100%
-      
+
       a
         padding: 0 10px
         text-align: left
@@ -86,4 +86,3 @@ header
         position: absolute
         top: 20px
         right: 10px
-
