@@ -19,16 +19,16 @@ html {
   font-size: 100%;
 }
 body {
-  font: 400 1rem/1.5 "ff-more-web-pro", Georgia, Times, serif;
+  font: 400 1rem/1.5 "Lato", Georgia, Times, serif;
   color: #333;
   -webkit-font-smoothing: antialiased;
 }
 ::-moz-selection {
-  background-color: #34954c;
+  background-color: #3cb371;
   color: #fff;
 }
 ::selection {
-  background-color: #34954c;
+  background-color: #3cb371;
   color: #fff;
 }
 h1,
@@ -39,8 +39,8 @@ h5,
 h6 {
   margin: 30px 0;
   color: #000;
-  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
+  font-weight: 600;
 }
 h1,
 h2,
@@ -55,11 +55,10 @@ h2 {
 }
 h3 {
   margin-top: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 h4 {
   font-size: 1.2rem;
-  color: #707070;
 }
 h5 {
   font-size: 1rem;
@@ -69,15 +68,15 @@ small {
 }
 a {
   cursor: pointer;
-  color: #34954c;
+  color: #3cb371;
   text-decoration: none;
 }
 a:hover:not(.button) {
-  color: #1a4b26;
+  color: #2a7d4f;
 }
 a:hover {
-  transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
 }
 a:focus {
   outline: none;
@@ -116,14 +115,14 @@ section:after {
   height: 1px;
   width: 20%;
   margin-left: -10%;
-  background-color: #e0e0e0;
+  background-color: #ebebeb;
 }
 section.centered {
   text-align: center;
 }
 @media (max-width: 480px) {
   .intro h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1;
   }
   .intro h3 {
@@ -203,7 +202,7 @@ button,
   display: inline-block;
   border-radius: 3px;
   font-size: 1rem;
-  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+  font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
   text-align: center;
   cursor: pointer;
   -webkit-appearance: none;
@@ -223,19 +222,25 @@ button:focus,
 }
 button.button-primary,
 .button.button-primary {
-  background-color: #34954c;
+  background-color: #3cb371;
 }
 button.button-primary:hover,
 .button.button-primary:hover {
-  background-color: #246835;
+  background-color: #36a166;
+}
+button.button-primary img.logo,
+.button.button-primary img.logo {
+  height: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 button.button-secondary,
 .button.button-secondary {
-  background-color: #8cd79f;
+  background-color: #9addb8;
 }
 button.button-secondary:hover,
 .button.button-secondary:hover {
-  background-color: #34954c;
+  background-color: #3cb371;
 }
 button.button-large,
 .button.button-large {
@@ -355,14 +360,7 @@ button.button-large,
   min-width: 400px;
 }
 header {
-  border-bottom: 1px solid #e0e0e0;
-}
-header h3 {
-  margin: 10px 0;
-  padding-left: 80px;
-  background: url("/img/logo.svg") 0 0 no-repeat;
-  background-size: contain;
-  text-transform: uppercase;
+  border-bottom: 1px solid #ebebeb;
 }
 header nav input[type=checkbox] {
   position: absolute;
@@ -374,12 +372,12 @@ header nav h3 {
 }
 header nav a,
 header nav label {
-  line-height: 100px;
+  line-height: 50px;
 }
 header nav label {
   cursor: pointer;
-  color: #34954c;
-  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+  color: #3cb371;
+  font-family: "Libre Franklin", Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 header nav .label {
@@ -387,9 +385,9 @@ header nav .label {
   padding: 3px 5px;
   margin-left: 5px;
   border-radius: 3px;
-  background-color: #8cd79f;
+  background-color: #9addb8;
   color: #fff;
-  font: 400 0.75rem/1.25 "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+  font: 400 0.75rem/1.25 "Libre Franklin", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 769px) {
   nav label {
@@ -413,7 +411,7 @@ header nav .label {
     position: relative;
   }
   nav input[type=checkbox]:checked ~ ul.unstyled li:not(:last-of-type) {
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #ebebeb;
   }
   nav input[type=checkbox]:checked ~ ul.unstyled li,
   nav input[type=checkbox]:checked ~ ul.unstyled a {
@@ -442,14 +440,25 @@ footer p:not(:last-child) {
 .intro {
   text-align: center;
 }
+.intro h1 {
+  position: relative;
+  display: inline-block;
+  margin: 4rem 0 1rem 0;
+}
+.intro h1 .logo {
+  position: absolute;
+  top: -25%;
+  height: 6rem;
+  left: -7rem;
+}
 .intro h3 {
-  margin-top: 0;
   font-weight: 400;
   line-height: 1.2;
+  margin: 2rem auto;
 }
 @media (min-width: 1023px) {
-  .intro h1 {
-    margin: 60px 0 0 0;
+  .intro h3 {
+    max-width: 700px;
   }
   .intro h4 {
     margin: 0 auto 30px;
@@ -457,8 +466,9 @@ footer p:not(:last-child) {
   }
 }
 @media (max-width: 480px) {
-  .intro h1 {
-    margin: 60px 0 10px 0;
+  .intro h1 .logo {
+    height: 4rem;
+    left: -5rem;
   }
   .intro .button:not(:last-of-type) {
     margin-bottom: 20px;
@@ -472,7 +482,7 @@ footer p:not(:last-child) {
   padding-top: 0;
 }
 .conferences dl:not(:last-of-type) {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #ebebeb;
 }
 .conferences dl dt {
   margin: 0;

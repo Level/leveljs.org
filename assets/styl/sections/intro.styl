@@ -7,17 +7,28 @@
 .intro
   text-align: center
 
+  h1
+    position: relative
+    display: inline-block
+    margin: 4rem 0 1rem 0
+
+  h1 .logo
+    position: absolute
+    top: -25%
+    height: 6rem
+    left: -7rem
+
   h3
-    margin-top: 0
     font-weight: 400
     line-height: 1.2
+    margin: 2rem auto
 
 @media $desktop
 
   .intro
 
-    h1
-      margin: 60px 0 0 0
+    h3
+      max-width: 700px
 
     h4
       margin: 0 auto 30px
@@ -27,8 +38,9 @@
 
   .intro
 
-    h1
-      margin: 60px 0 10px 0
+    h1 .logo
+      height: 4rem
+      left: -5rem
 
     .button
       &:not(:last-of-type)

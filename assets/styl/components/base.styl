@@ -13,7 +13,7 @@ html
   font-size: 100%
 
 body
-  font: 400 $font-base/$line-height-base $font-ffmore
+  font: 400 $font-base/$line-height-base $text-font
   color: $gray
   -webkit-font-smoothing: antialiased
 
@@ -28,8 +28,8 @@ body
 h1, h2, h3, h4, h5, h6
   margin: 30px 0
   color: black
-  font-family: $font-franklin
-  font-weight: 900
+  font-family: $header-font
+  font-weight: 600
 
 h1, h2, h3
   line-height: $line-height-tight
@@ -46,7 +46,6 @@ h3
 
 h4
   font-size: $font-heading-four
-  color: lighten($gray, 30%)
 
 h5
   font-size: $font-heading-five
@@ -63,8 +62,8 @@ a
     color: $green-dark
 
   &:hover
-    transition: all .5s ease-in
-    -webkit-transition: all .5s ease-in
+    transition: all .1s ease-in
+    -webkit-transition: all .1s ease-in
 
   &:focus
     outline: none

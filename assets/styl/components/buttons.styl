@@ -11,7 +11,7 @@ button, .button
   display: inline-block
   border-radius: 3px
   font-size: $font-base
-  font-family: $font-franklin
+  font-family: $header-font
   text-align: center
   cursor: pointer
   -webkit-appearance: none
@@ -31,7 +31,12 @@ button, .button
     background-color: $green
 
     &:hover
-      background-color: darken(@background-color, 30%)
+      background-color: darken(@background-color, 10%)
+
+    img.logo
+      height: 25px
+      margin-right: 10px
+      vertical-align: middle
 
   &.button-secondary
     background-color: $green-light

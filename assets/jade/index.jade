@@ -4,8 +4,6 @@ block content
   header(role='banner')
     .content
       nav.cf
-        h3.pull-left LevelDB
-        
         .pull-right
           label(for='menu-toggle') Menu
           input(type='checkbox', id='menu-toggle')
@@ -21,11 +19,19 @@ block content
 
   .content(role='main')
     section.intro.animated.fadeInDown
-      h1 LevelDB
-      h3 LevelDB is a light-weight, single-purpose library for persistence with bindings to many platforms.
-      a(href='https://github.com/google/leveldb', class='button button-primary button-large', title='C++ Library') C++ Library
-      a(href='https://github.com/rvagg/node-levelup', class='button button-primary button-large', title='LevelUP (Node.js)') LevelUP (Node.js)
-      a(href='https://plyvel.readthedocs.org/', class='button button-primary button-large', title='Plyvel (Python)') Plyvel (Python)
+      h1
+        img.logo(src='/img/logo.svg')
+        | LevelDB
+      h3 A light-weight, single-purpose library for persistence with bindings to many platforms.
+      a(href='https://github.com/google/leveldb', class='button button-primary button-large', title='LevelDB (C++)')
+        img.logo(src='/img/logo-white.svg')
+        | LevelDB (C++)
+      a(href='https://github.com/Level/level', class='button button-primary button-large', title='Level (JavaScript)')
+        img.logo(src='/img/logo-white.svg')
+        | Level (JavaScript)
+      a(href='https://plyvel.readthedocs.org/', class='button button-primary button-large', title='Plyvel (Python)')
+        img.logo(src='/img/logo-white.svg')
+        | Plyvel (Python)
 
     section.features.centered
       h3 Features
