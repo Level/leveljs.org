@@ -65,3 +65,7 @@ npm run deploy
 svccfg import ./service.xml
 svcadm enable leveldb-org
 ```
+
+## License
+
+[MIT](LICENSE.md) © 2014-present Paolo Fragomeni and [Contributors](CONTRIBUTORS.md).
