@@ -16,7 +16,9 @@
     "prep": "npm run build-styles && npm run build-jade && cp -r ./assets/static/* . && echo leveldb.org > CNAME",
     "git-commit": "git add -A . && git commit -m gh-pages",
     "git-push": "git push origin gh-pages --force && git checkout master",
-    "deploy": "npm run git-co && npm run prep && npm run git-commit && npm run git-push"
+    "deploy": "npm run git-co && npm run prep && npm run git-commit && npm run git-push",
+    "hallmark": "hallmark --fix",
+    "test": "hallmark"
   },
   "dependencies": {
     "send": "^0.2.0"
