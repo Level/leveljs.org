@@ -27,5 +27,8 @@
     "stylus": "^0.42.3"
   },
   "repository": "Level/leveldb.org",
-  "homepage": "https://github.com/Level/leveldb.org"
+  "homepage": "https://github.com/Level/leveldb.org",
+  "keywords": [
+    "level"
+  ]
 }
