@@ -2,6 +2,8 @@
   "name": "leveldb.org",
   "version": "1.0.0",
   "description": "This is the source code for [leveldb.org](leveldb.org).",
+  "author": "hij1nx",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "run-p watch-styles watch-jade server",
@@ -16,8 +18,6 @@
     "git-push": "git push origin gh-pages --force && git checkout master",
     "deploy": "npm run git-co && npm run prep && npm run git-commit && npm run git-push"
   },
-  "author": "hij1nx",
-  "license": "MIT",
   "dependencies": {
     "send": "^0.2.0"
   },
