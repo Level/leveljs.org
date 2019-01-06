@@ -4,8 +4,8 @@
 | :--------------------- | :----------------------------------------------------- | :------------------------------------------------------------------ |
 | **thefoxis**           |                                                        |                                                                     |
 | **Paolo Fragomeni**    | [**@hxoht**](https://github.com/hxoht)                 | [**@hxoht@twitter**](https://twitter.com/hxoht)                     |
-| **Vincent Weevers**    | [**@vweevers**](https://github.com/vweevers)           | [**@vweevers@twitter**](https://twitter.com/vweevers)               |
 | **Lars-Magnus Skog**   | [**@ralphtheninja**](https://github.com/ralphtheninja) | [**@ralph@social.weho.st**](https://social.weho.st/@ralph)          |
+| **Vincent Weevers**    | [**@vweevers**](https://github.com/vweevers)           | [**@vweevers@twitter**](https://twitter.com/vweevers)               |
 | **Ivan Miskovic**      | [**@ivantm**](https://github.com/ivantm)               |                                                                     |
 | **wouter bolsterlee**  | [**@wbolster**](https://github.com/wbolster)           |                                                                     |
 | **Matteo Collina**     | [**@mcollina**](https://github.com/mcollina)           | [**@matteocollina@twitter**](https://twitter.com/matteocollina)     |
