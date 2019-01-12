@@ -2,6 +2,7 @@
   "name": "leveldb.org",
   "version": "1.0.0",
   "description": "This is the source code for [leveldb.org](leveldb.org).",
+  "private": true,
   "author": "hij1nx",
   "license": "MIT",
   "main": "index.js",
