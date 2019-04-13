@@ -1,9 +1,9 @@
-# leveldb.org
+# leveljs.org
 
 [![Backers on Open Collective](https://opencollective.com/level/backers/badge.svg?color=orange)](#backers)
 [![Sponsors on Open Collective](https://opencollective.com/level/sponsors/badge.svg?color=orange)](#sponsors)
 
-This is the source code for [leveldb.org](http://leveldb.org).
+This is the source code for [leveljs.org](http://leveljs.org).
 
 ## Stylus Structure
 
@@ -44,7 +44,7 @@ Where:
 
 ## Contributing
 
-[`Level/leveldb.org`](https://github.com/Level/leveldb.org) is an **OPEN Open Source Project**. This means that:
+[`Level/leveljs.org`](https://github.com/Level/leveljs.org) is an **OPEN Open Source Project**. This means that:
 
 > Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
 
@@ -53,8 +53,8 @@ See the [Contribution Guide](https://github.com/Level/community/blob/master/CONT
 ### For contributors
 
 ```
-git clone https://github.com/Level/leveldb.org.git
-cd leveldb.org
+git clone https://github.com/Level/leveljs.org.git
+cd leveljs.org
 npm i
 npm start
 # hack on the codez, send pull request
@@ -76,12 +76,12 @@ npm run deploy
 
 ```
 svccfg import ./service.xml
-svcadm enable leveldb-org
+svcadm enable leveljs-org
 ```
 
 ## Donate
 
-To sustain [`Level`](https://github.com/Level) and its activities, become a backer or sponsor on [Open Collective](https://opencollective.com/level). Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level), [npm](https://www.npmjs.com/) packages and (soon) [our website](http://leveldb.org). 💖
+To sustain [`Level`](https://github.com/Level) and its activities, become a backer or sponsor on [Open Collective](https://opencollective.com/level). Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level), [npm](https://www.npmjs.com/) packages and (soon) [our website](http://leveljs.org). 💖
 
 ### Backers
 
