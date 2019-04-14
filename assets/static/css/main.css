@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------
 *
-* LEVELDB.org
+* leveljs.org
 * v.1.0.1
 *
 * Designed and coded by @fox
@@ -57,6 +57,9 @@ h3 {
   margin-top: 0;
   font-size: 2rem;
 }
+h3.centered {
+  text-align: center;
+}
 h4 {
   font-size: 1.2rem;
 }
@@ -80,6 +83,9 @@ a:hover {
 }
 a:focus {
   outline: none;
+}
+code {
+  background-color: #f3f3f3;
 }
 .cf:before,
 .cf:after {
@@ -119,6 +125,10 @@ section:after {
 }
 section.centered {
   text-align: center;
+}
+section > p {
+  margin: 0 auto;
+  max-width: 500px;
 }
 @media (max-width: 480px) {
   .intro h1 {
@@ -395,6 +405,9 @@ header nav .label {
   }
 }
 @media (max-width: 768px) {
+  .github-corner {
+    display: none;
+  }
   nav .pull-right {
     float: none;
     text-align: right;
@@ -519,19 +532,14 @@ footer p:not(:last-child) {
     margin: 0 auto 10px;
   }
 }
-.community p {
-  margin: 0;
-}
-.community p:last-of-type {
+.support p:last-of-type {
   margin-bottom: 40px;
 }
-.community .button-google,
-.community .button-twitter {
+.support .button-twitter {
   position: relative;
   padding-left: 60px;
 }
-.community .button-google:before,
-.community .button-twitter:before {
+.support .button-twitter:before {
   content: '';
   position: absolute;
   top: 0;
@@ -540,41 +548,30 @@ footer p:not(:last-child) {
   background-size: contain;
   opacity: 0.5;
 }
-.community .button-google:before {
-  left: 10px;
-  height: 120px;
-  width: 40px;
-  background-image: url("/img/icon-google.svg");
-}
-.community .button-twitter:before {
+.support .button-twitter:before {
   left: 10px;
   height: 60px;
   width: 60px;
   background-image: url("/img/icon-twitter.svg");
 }
 @media (min-width: 1023px) {
-  .community .button:not(:last-of-type) {
+  .support .button:not(:last-of-type) {
     margin-right: 20px;
   }
 }
 @media (max-width: 768px) {
-  .community .button:not(:last-of-type) {
+  .support .button:not(:last-of-type) {
     margin-bottom: 20px;
   }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
-  .community .button {
+  .support .button {
     display: block;
     width: 50%;
     margin: 0 auto 20px;
   }
-  .community .button:last-child {
+  .support .button:last-child {
     margin-bottom: 0;
-  }
-}
-@media (min-width: 1023px) {
-  .features .column {
-    text-align: left;
   }
 }
 @media (min-width: 1023px) {

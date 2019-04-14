@@ -1,18 +1,16 @@
 /*--------------------------------------------------------------------
 *
-* COMMUNITY
+* SUPPORT
 *
 --------------------------------------------------------------------*/
 
-.community
+.support
 
   p
-    margin: 0
-
     &:last-of-type
       margin-bottom: 40px
 
-  .button-google, .button-twitter
+  .button-twitter
     position: relative
     padding-left: 60px
 
@@ -25,12 +23,6 @@
       background-size: contain
       opacity: .5
 
-  .button-google:before
-    left: 10px
-    height: 120px
-    width: 40px
-    background-image: url('/img/icon-google.svg')
-
   .button-twitter:before
     left: 10px
     height: 60px
@@ -39,23 +31,23 @@
 
 @media $desktop
 
-  .community 
+  .support
 
     .button:not(:last-of-type)
       margin-right: 20px
 
 @media $mobile-devices
 
-  .community
-    
+  .support
+
     .button
       &:not(:last-of-type)
         margin-bottom: 20px
 
 @media $tablet
 
-  .community
-    
+  .support
+
     .button
       display: block
       width: 50%

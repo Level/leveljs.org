@@ -43,6 +43,8 @@ h2
 h3
   margin-top: 0
   font-size: $font-heading-three
+  &.centered
+    text-align: center
 
 h4
   font-size: $font-heading-four
@@ -67,6 +69,9 @@ a
 
   &:focus
     outline: none
+
+code
+  background-color: #f3f3f3
 
 .cf
   &:before,
@@ -106,6 +111,10 @@ section
 
   &.centered
     text-align: center
+
+  > p
+    margin: 0 auto
+    max-width: 500px
 
 @media $smartphone
 
