@@ -62,7 +62,7 @@ npm start
 
 ### For maintainers
 
-`npm run deploy` builds the static site, switches to the gh-pages branch and 
+`npm run deploy` builds the static site, switches to the gh-pages branch and
 puts the built site in the root, and then does git push origin gh-pages.
 
 ```
@@ -81,7 +81,7 @@ svcadm enable leveljs-org
 
 ## Donate
 
-To sustain [`Level`](https://github.com/Level) and its activities, become a backer or sponsor on [Open Collective](https://opencollective.com/level). Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level), [npm](https://www.npmjs.com/) packages and (soon) [our website](http://leveljs.org). 💖
+To sustain [`Level`](https://github.com/Level) and its activities, become a backer or sponsor on [Open Collective](https://opencollective.com/level). Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level) and [npm](https://www.npmjs.com/) packages. 💖
 
 ### Backers
 
