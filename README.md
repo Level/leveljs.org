@@ -72,13 +72,6 @@ git merge <fork-branch>
 npm run deploy
 ```
 
-### To run in production mode on a SmartOS server, use:
-
-```
-svccfg import ./service.xml
-svcadm enable leveljs-org
-```
-
 ## Donate
 
 To sustain [`Level`](https://github.com/Level) and its activities, become a backer or sponsor on [Open Collective](https://opencollective.com/level). Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level) and [npm](https://www.npmjs.com/) packages. 💖

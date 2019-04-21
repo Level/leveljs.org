@@ -1,7 +1,7 @@
 {
-  "name": "leveldb.org",
+  "name": "leveljs.org",
   "version": "1.0.0",
-  "description": "This is the source code for [leveldb.org](leveldb.org).",
+  "description": "This is the source code for [leveljs.org](leveljs.org).",
   "private": true,
   "author": "hij1nx",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "build-jade": "jade ./assets/jade/index.jade --out ./assets/static/",
     "server": "node server.js 8080",
     "git-co": "git checkout gh-pages && git reset --hard origin/master",
-    "prep": "npm run build-styles && npm run build-jade && cp -r ./assets/static/* . && echo leveldb.org > CNAME",
+    "prep": "npm run build-styles && npm run build-jade && cp -r ./assets/static/* . && echo leveljs.org > CNAME",
     "git-commit": "git add -A . && git commit -m gh-pages",
     "git-push": "git push origin gh-pages --force && git checkout master",
     "deploy": "npm run git-co && npm run prep && npm run git-commit && npm run git-push",
@@ -37,8 +37,8 @@
   "hallmark": {
     "community": "level-community"
   },
-  "repository": "Level/leveldb.org",
-  "homepage": "https://github.com/Level/leveldb.org",
+  "repository": "Level/leveljs.org",
+  "homepage": "https://github.com/Level/leveljs.org",
   "keywords": [
     "level"
   ]
