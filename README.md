@@ -31,16 +31,16 @@ Where:
 ```
 ├── assets
   └── templates
-    ├── index.jade
-    ├── footer.jade
-    └── layout.jade
+    ├── index.pug
+    ├── footer.pug
+    └── layout.pug
 ```
 
 Where:
 
-- **layout.jade** — basic layout file for the entire website
-- **index.jade** — the page content (here being the landing page)
-- **footer.jade** - footnotes
+- **layout.pug** — basic layout file for the entire website
+- **index.pug** — the page content (here being the landing page)
+- **footer.pug** - footnotes
 
 ## Contributing
 

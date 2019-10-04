@@ -7,14 +7,14 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "run-p watch-styles watch-jade server",
+    "start": "run-p watch-styles watch-pug server",
     "watch-styles": "stylus -w ./assets/styl/ -o ./assets/static/css/",
-    "watch-jade": "jade --watch ./assets/jade/index.jade --out ./assets/static/",
+    "watch-pug": "pug --watch ./assets/pug/index.pug --out ./assets/static/",
     "build-styles": "stylus ./assets/styl/ -o ./assets/static/css/",
-    "build-jade": "jade ./assets/jade/index.jade --out ./assets/static/",
+    "build-pug": "pug ./assets/pug/index.pug --out ./assets/static/",
     "server": "node server.js 8080",
     "git-co": "git checkout gh-pages && git reset --hard origin/master",
-    "prep": "npm run build-styles && npm run build-jade && cp -r ./assets/static/* . && echo leveljs.org > CNAME",
+    "prep": "npm run build-styles && npm run build-pug && cp -r ./assets/static/* . && echo leveljs.org > CNAME",
     "git-commit": "git add -A . && git commit -m gh-pages",
     "git-push": "git push origin gh-pages --force && git checkout master",
     "deploy": "npm run git-co && npm run prep && npm run git-commit && npm run git-push",
@@ -26,9 +26,9 @@
   },
   "devDependencies": {
     "hallmark": "^2.0.0",
-    "jade": "^1.3.0",
     "level-community": "^3.0.0",
     "npm-run-all": "^4.1.3",
+    "pug-cli": "^1.0.0-alpha6",
     "stylus": "^0.54.7"
   },
   "hallmark": {
