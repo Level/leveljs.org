@@ -19,15 +19,12 @@
     "git-push": "git push origin gh-pages --force && git checkout master",
     "deploy": "npm run git-co && npm run prep && npm run git-commit && npm run git-push",
     "hallmark": "hallmark --fix",
-    "test": "hallmark",
-    "dependency-check": "dependency-check . server.js",
-    "prepublishOnly": "npm run dependency-check"
+    "test": "hallmark"
   },
   "dependencies": {
     "send": "^0.17.1"
   },
   "devDependencies": {
-    "dependency-check": "^3.3.0",
     "hallmark": "^2.0.0",
     "jade": "^1.3.0",
     "level-community": "^3.0.0",
