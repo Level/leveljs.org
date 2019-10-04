@@ -24,7 +24,7 @@
     "prepublishOnly": "npm run dependency-check"
   },
   "dependencies": {
-    "send": "^0.2.0"
+    "send": "^0.17.1"
   },
   "devDependencies": {
     "dependency-check": "^3.3.0",

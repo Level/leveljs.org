@@ -24,8 +24,7 @@ http.createServer(function(req, res) {
     u = '/index.html'
   }
 
-  send(req, u)
-    .root(__dirname + '/assets/static')
+  send(req, u, { root: __dirname + '/assets/static' })
     .on('error', error)
     .on('directory', redirect)
     .pipe(res);
