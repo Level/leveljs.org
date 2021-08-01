@@ -58,15 +58,7 @@ npm start
 
 ### For maintainers
 
-`npm run deploy` builds the static site, switches to the gh-pages branch and
-puts the built site in the root, and then does git push origin gh-pages.
-
-```
-git fetch
-git checkout master # if you're not already on it
-git merge <fork-branch>
-npm run deploy
-```
+Manually trigger the GitHub Actions workflow to deploy to gh-pages.
 
 ## Donate
 

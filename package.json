@@ -10,7 +10,7 @@
     "start": "run-p build-assets watch-styles watch-pug server",
     "watch-styles": "stylus -w ./assets/styl/ -o ./dist/css/",
     "watch-pug": "pug --watch ./assets/pug/index.pug --out ./dist/",
-    "build": "npm run build-styles && npm run build-pug && npm run build-assets && echo leveljs.org > dist/CNAME",
+    "build": "npm run build-styles && npm run build-pug && npm run build-assets",
     "build-styles": "stylus ./assets/styl/ -o ./dist/css/",
     "build-pug": "pug ./assets/pug/index.pug --out ./dist/",
     "build-assets": "cpy **/* ../../dist --cwd=assets/static --parents",
