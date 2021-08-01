@@ -7,27 +7,23 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "run-p watch-styles watch-pug server",
-    "watch-styles": "stylus -w ./assets/styl/ -o ./assets/static/css/",
-    "watch-pug": "pug --watch ./assets/pug/index.pug --out ./assets/static/",
-    "build-styles": "stylus ./assets/styl/ -o ./assets/static/css/",
-    "build-pug": "pug ./assets/pug/index.pug --out ./assets/static/",
+    "start": "run-p build-assets watch-styles watch-pug server",
+    "watch-styles": "stylus -w ./assets/styl/ -o ./dist/css/",
+    "watch-pug": "pug --watch ./assets/pug/index.pug --out ./dist/",
+    "build": "npm run build-styles && npm run build-pug && npm run build-assets && echo leveljs.org > dist/CNAME",
+    "build-styles": "stylus ./assets/styl/ -o ./dist/css/",
+    "build-pug": "pug ./assets/pug/index.pug --out ./dist/",
+    "build-assets": "cpy **/* ../../dist --cwd=assets/static --parents",
     "server": "node server.js 8080",
-    "git-co": "git checkout gh-pages && git reset --hard origin/master",
-    "prep": "npm run build-styles && npm run build-pug && cp -r ./assets/static/* . && echo leveljs.org > CNAME",
-    "git-commit": "git add -A . && git commit -m gh-pages",
-    "git-push": "git push origin gh-pages --force && git checkout master",
-    "deploy": "npm run git-co && npm run prep && npm run git-commit && npm run git-push",
     "hallmark": "hallmark --fix",
     "test": "hallmark"
   },
-  "dependencies": {
-    "send": "^0.17.1"
-  },
   "devDependencies": {
+    "cpy-cli": "^3.1.1",
     "hallmark": "^2.0.0",
     "npm-run-all": "^4.1.3",
     "pug-cli": "^1.0.0-alpha6",
+    "send": "^0.17.1",
     "stylus": "^0.54.7"
   },
   "repository": "Level/leveljs.org",
