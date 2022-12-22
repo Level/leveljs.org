@@ -103,24 +103,31 @@ block content
           h4 Live Demo
           #demo.runkit-container
           script#demo-source(type='text/template').
-            const level = require('level')
-            const db = level('./db', { valueEncoding: 'json' })
+            const { Level } = require('level')
+            const db = new Level('./db', { valueEncoding: 'json' })
 
-            db.put('key', { example: true }, function (err) {
-              if (err) throw err
+            async function main () {
+              // Add an entry with key 'a' and value 1
+              await db.put('a', 1)
 
-              db.get('key', function (err, value) {
-                if (err) throw err
-                console.log(value)
-              })
-            })
+              // Add multiple entries
+              await db.batch([{ type: 'put', key: 'b', value: 2 }])
 
-            // Or if you prefer async/await:
-            await db.put('key', { example: true })
+              // Get value of key 'a': 1
+              const value = await db.get('a')
+
+              // Iterate entries with keys that are greater than 'a'
+              for await (const [key, value] of db.iterator({ gt: 'a' })) {
+                console.log(value) // 2
+              }
+            }
+
+            main()
           script.
             RunKit.createNotebook({
               element: document.getElementById('demo'),
-              source: document.getElementById('demo-source').textContent
+              source: document.getElementById('demo-source').textContent,
+              nodeVersion: '>=18'
             })
           p: em 
             | As of 
