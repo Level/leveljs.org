@@ -36,22 +36,29 @@ to discover more modules. See our
 to find out what we're working on. If you need help - technical, 
 philosophical or other - feel free to open an issue in 
 <a href="https://github.com/Level/community"><code>community</code></a> 
-or a more specific repository.</p></div><div class="column"><h4>Live Demo</h4><div class="runkit-container" id="demo"></div><script id="demo-source" type="text/template">const level = require('level')
-const db = level('./db', { valueEncoding: 'json' })
+or a more specific repository.</p></div><div class="column"><h4>Live Demo</h4><div class="runkit-container" id="demo"></div><script id="demo-source" type="text/template">const { Level } = require('level')
+const db = new Level('./db', { valueEncoding: 'json' })
 
-db.put('key', { example: true }, function (err) {
-  if (err) throw err
+async function main () {
+  // Add an entry with key 'a' and value 1
+  await db.put('a', 1)
 
-  db.get('key', function (err, value) {
-    if (err) throw err
-    console.log(value)
-  })
-})
+  // Add multiple entries
+  await db.batch([{ type: 'put', key: 'b', value: 2 }])
 
-// Or if you prefer async/await:
-await db.put('key', { example: true })</script><script>RunKit.createNotebook({
+  // Get value of key 'a': 1
+  const value = await db.get('a')
+
+  // Iterate entries with keys that are greater than 'a'
+  for await (const [key, value] of db.iterator({ gt: 'a' })) {
+    console.log(value) // 2
+  }
+}
+
+main()</script><script>RunKit.createNotebook({
   element: document.getElementById('demo'),
-  source: document.getElementById('demo-source').textContent
+  source: document.getElementById('demo-source').textContent,
+  nodeVersion: '>=18'
 })</script><p><em> As of <a href="https://github.com/Level/level"><code>level@5</code></a>, the above code works in Node.js, Electron and browsers!</em></p></div></div></section><section class="goals"><h3 class="centered">Highlights</h3><div class="cf"><div class="column"><h4>Simple</h4><p>Most databases are mysterious black boxes. Level provides a highly 
 transparent, light-weight foundation for you to compose 
 higher-level features on top of. First and foremost, it offers 
