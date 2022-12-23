@@ -27,6 +27,8 @@ jobs:
         run: echo leveljs.org > dist/CNAME
       - name: Disable Jekyll
         run: touch dist/.nojekyll
+      - name: List files
+        run: ls -R dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
